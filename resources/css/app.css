@@ -1,6 +1,1 @@
 @import "tailwindcss";
-.bg-batik {
-    background-image: url("resources/images/batiknavbar.jpg");
-    background-size: cover;
-    background-position: center;
-}
