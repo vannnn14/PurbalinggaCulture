@@ -134,12 +134,60 @@
         </div> -->
     </section>
 
-    <!-- Start Tokoh Purbalingga -->
-    <section class="max-w-7xl mx-auto p-4">
-        <h1 class="text-3xl font-bold mb-2 text-gray-900"> Tokoh - Tokoh</h1>
-        <h1 class="text-3xl font-bold mb-6 text-gray-900"> Purbalingga</h1>
-        <!-- End Tokoh Purbalingga -->
-    </section>
+
+  
+  <!-- Start Tokoh Purbalingga -->
+  <section class="max-8xl mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6 text-gray-900">Tokoh Purbalingga</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Card -->
+    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
+      <img src="/images/soedirman.jpeg" alt="Tokoh 1"
+           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
+      <div class="mt-3 px-1">
+        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
+        <p class="text-gray-900 font-medium text-base">Jendral Soedirman</p>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
+      <img src="/images/pbg.jpg" alt="Tokoh 2"
+           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
+      <div class="mt-3 px-1">
+        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
+        <p class="text-gray-900 font-medium text-base">Ahmad Yani</p>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
+      <img src="/images/masjid.jpg" alt="Tokoh 3"
+           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
+      <div class="mt-3 px-1">
+        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
+        <p class="text-gray-900 font-medium text-base">Tokoh Lain</p>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
+      <img src="/images/stasiun.jpg" alt="Tokoh 4"
+           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
+      <div class="mt-3 px-1">
+        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
+        <p class="text-gray-900 font-medium text-base">Tokoh Lainnya</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- End Tokoh Purbalingga -->
+
 </body>
 
 </html>
