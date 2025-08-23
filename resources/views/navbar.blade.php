@@ -9,12 +9,32 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body>
-    <!-- Navbar Start -->
+<body x-data x-init="const nav = document.querySelector('nav');
+    const body = document.body;
+    function setBodyPadding() {
+        body.style.paddingTop = nav.offsetHeight + 'px';
+    }
+    window.addEventListener('load', setBodyPadding);
+    window.addEventListener('resize', setBodyPadding);
+">
     <section>
-        <nav id="nav-menu" class="relative bg-[url('/images/batiknavbar.jpg')]  items-center justify-between border-b text-white px-6 py-4">
+    <nav 
+    x-data="{ lastScroll: 0, hidden: false }"
+    x-init="
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) { hidden = false; return }
+            hidden = currentScroll > lastScroll;
+            lastScroll = currentScroll;
+        })
+    "
+    :class="hidden ? '-translate-y-full' : 'translate-y-0'"
+    class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300
+           bg-[url('/images/batiknavbar.jpg')] bg-cover bg-center
+           items-center justify-between border-b text-white px-6 py-4">
+
             <!-- Overlay warna coklat -->
-            <div class="absolute inset-0 bg-[#532700]"></div>
+            <div class="absolute inset-0 bg-[#532700] opacity-100"></div>
 
             <!-- Konten navbar di atas overlay -->
             <div class="relative z-10">
@@ -27,11 +47,11 @@
                     <ul class="flex items-center space-x-20">
                         <li>
                             <a href="/home" class="px-4 py-2 rounded-md transition-colors duration-300 
-                                      hover:bg-[#C59867] hover:text-white">Home</a>
+                                hover:bg-[#C59867] hover:text-white">Home</a>
                         </li>
                         <li x-data="{open: false}" class="relative">
                             <button @click="open = !open" class="focus:outline-none px-4 py-2 rounded-md transition-colors duration-300
-                                           hover:bg-[#C59867] text-white cursor-pointer flex items-center gap-1"
+                                    hover:bg-[#C59867] text-white cursor-pointer flex items-center gap-1"
                                 :class="{ 'bg-[#C59867] text-white':open}">
                                 Jelajah Budaya
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-1" fill="none"
@@ -53,15 +73,15 @@
                         </li>
                         <li>
                             <a href="#Kuliner" class="px-4 py-2 rounded-md transition-colors duration-300 
-                                      hover:bg-[#C59867] hover:text-white">Kuliner</a>
+                                hover:bg-[#C59867] hover:text-white">Kuliner</a>
                         </li>
                         <li>
                             <a href="#Bahasa" class="px-4 py-2 rounded-md transition-colors duration-300 
-                                      hover:bg-[#C59867] hover:text-white">Bahasa</a>
+                                hover:bg-[#C59867] hover:text-white">Bahasa</a>
                         </li>
                         <li>
                             <a href="#Tentang" class="px-4 py-2 rounded-md transition-colors duration-300 
-                                      hover:bg-[#C59867] hover:text-white">Tentang</a>
+                                hover:bg-[#C59867] hover:text-white">Tentang</a>
                         </li>
                     </ul>
                 </div>
