@@ -27,7 +27,7 @@
     <!-- Konten Utama -->
     <div class="text-center relative z-10 max-w-3xl w-full">
         <!-- Judul -->
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Kenali Batik Purbalingga</h2>
+        <h2 class="text-3xl md:text-4xl font-kawung font-bold mb-6">Kenali Batik Purbalingga</h2>
         
         <!-- Video -->
         <div 
@@ -48,7 +48,7 @@
         </div>
 
         <!-- Deskripsi -->
-        <p class="text-gray-800 leading-relaxed text-lg md:text-xl px-2">
+        <p class="text-gray-800 leading-relaxed text-lg md:text-xl px-2 font-sinerva">
             Batik adalah kain khas Indonesia yang dibuat dengan teknik menggambar atau menerapkan motif 
             menggunakan malam (lilin panas). Batik bukan hanya sekadar kain, tetapi juga warisan budaya 
             bernilai seni, sejarah, dan filosofi mendalam.

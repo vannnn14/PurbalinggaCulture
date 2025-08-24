@@ -11,7 +11,7 @@
 <body>
    <!-- Footer Start -->
     <div class="">
-   <footer class="bg-[#5C2C0C] text-white text-center py-20 ">
+   <footer class="bg-[#1c1005] text-white text-center py-20 ">
     FOOTER
 </footer>
 </div>

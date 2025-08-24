@@ -7,9 +7,12 @@ export default {
     ],
     theme: {
       extend: {
-        
+        fontFamily: {
+          sinerva: ['Sinerva', 'serif'],
+          kawung: ['Kawung', 'serif'],
       },
     },
+  },
     plugins: [],
   };
   
