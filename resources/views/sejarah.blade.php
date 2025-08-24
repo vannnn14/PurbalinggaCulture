@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-[#FFFFED] ">
+<body class="bg-[#FFECD1] ">
     <!-- Navbar Start -->
     @include('navbar')
     <!-- Navbar End -->
@@ -135,7 +135,11 @@
     </section>
 
 
-  
+   <!--Garis Pembatas  -->
+<section >
+<div class="h-1 bg-[#09cd88]">
+</div>
+</section>
   <!-- Start Tokoh Purbalingga -->
   <section class="max-8xl mx-auto p-6">
   <h1 class="text-3xl font-bold mb-6 text-gray-900">Tokoh Purbalingga</h1>
@@ -184,10 +188,11 @@
 
   </div>
 </section>
-
-
 <!-- End Tokoh Purbalingga -->
 
+<section>
+    @include('footer')
+</section>
 </body>
 
 </html>

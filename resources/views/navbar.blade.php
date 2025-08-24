@@ -15,21 +15,16 @@
         body.style.paddingTop = nav.offsetHeight + 'px';
     }
     window.addEventListener('load', setBodyPadding);
-    window.addEventListener('resize', setBodyPadding);
-">
+    window.addEventListener('resize', setBodyPadding);">
     <section>
-    <nav 
-    x-data="{ lastScroll: 0, hidden: false }"
-    x-init="
+        <nav x-data="{ lastScroll: 0, hidden: false }" x-init="
         window.addEventListener('scroll', () => {
             let currentScroll = window.pageYOffset;
             if (currentScroll <= 0) { hidden = false; return }
             hidden = currentScroll > lastScroll;
             lastScroll = currentScroll;
         })
-    "
-    :class="hidden ? '-translate-y-full' : 'translate-y-0'"
-    class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300
+    " :class="hidden ? '-translate-y-full' : 'translate-y-0'" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300
            bg-[url('/images/batiknavbar.jpg')] bg-cover bg-center
            items-center justify-between border-b text-white px-6 py-4">
 
@@ -40,7 +35,7 @@
             <div class="relative z-10">
                 <div class="flex justify-between items-center">
                     <div class="absolute left-1/2 transform -translate-x-1/2 text-center mt-3">
-                        <h1 class="text-lg font-bold tracking-wide font-inknut">Purbalingga Culture</h1>
+                        <h1 class="text-lg font-bold tracking-wide ">Purbalingga Culture</h1>
                     </div>
                 </div>
                 <div class="flex justify-center space-x-6 mt-6 w-3/4 mx-auto border-t border-opacity-40 pt-2">
@@ -67,7 +62,7 @@
                                         Tradisi Lokal</a></li>
                                 <li><a href="#Cerita" class="block px-4 py-2 text-black hover:bg-[#C59867]">Cerita
                                         Rakyat</a></li>
-                                <li><a href="#Batik" class="block px-4 py-2 text-black hover:bg-[#C59867]">Batik
+                                <li><a href="/batik" class="block px-4 py-2 text-black hover:bg-[#C59867]">Batik
                                         Daerah</a></li>
                             </ul>
                         </li>
@@ -91,5 +86,4 @@
     <!-- Navbar End -->
 
 </body>
-
 </html>

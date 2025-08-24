@@ -22,3 +22,6 @@ Route::get('/sejarah', function () {
 Route::get('/senitradisi', function () {
     return view('senitradisi');
 });
+Route::get('/batik', function () {
+    return view('batik');
+});
