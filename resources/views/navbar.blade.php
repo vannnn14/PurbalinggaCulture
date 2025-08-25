@@ -71,7 +71,7 @@
                                 hover:bg-[#C59867] hover:text-white">Kuliner</a>
                         </li>
                         <li>
-                            <a href="#Bahasa" class="px-4 py-2 rounded-md transition-colors duration-300 
+                            <a href="/bahasa" class="px-4 py-2 rounded-md transition-colors duration-300 
                                 hover:bg-[#C59867] hover:text-white">Bahasa</a>
                         </li>
                         <li>

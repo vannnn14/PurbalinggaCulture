@@ -25,3 +25,6 @@ Route::get('/senitradisi', function () {
 Route::get('/batik', function () {
     return view('batik');
 });
+Route::get('/bahasa', function () {
+    return view('bahasa');
+});

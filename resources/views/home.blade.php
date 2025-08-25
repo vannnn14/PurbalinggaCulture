@@ -12,7 +12,7 @@
     <!-- Navbar Start -->
     @include('navbar')
     <!-- Navbar End -->
-    <h1> Anjay</h1>
+    <h1>home awal</h1>
 </body>
 
 </html>
