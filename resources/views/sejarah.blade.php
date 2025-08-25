@@ -59,7 +59,7 @@
                 <!-- max-w-md -->
             </div>
         </div>
-        <section class="w-full bg-black py-12">
+        <section class="w-full bg-[#1c1005] py-12">
             <div x-data="{ current: 0, slides: [
         { img: '/images/pbg.jpg', text: 'Alun Alun Selatan Tempo Dulu ...' },
         { img: '/images/stasiun.jpg', text: 'Stasiun Poerbolinggo ...' },
