@@ -114,103 +114,75 @@
     {{-- PEMBATAS GARIS --}}
     <div class="h-px bg-gray-300"></div>
 
-    {{-- TOKOH PURBALINGGA --}}
-    <section id="tokoh" class="py-10 md:py-14 bg-white">
+    {{-- TOKOH PURBALINGGA (header + 4 highlight + CTA) --}}
+    <section id="tokoh" class="py-12 bg-white">
+      {{-- Header ala screenshot: judul kiri + tombol kanan + garis --}}
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex items-end justify-between gap-4">
-          <div>
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Tokoh Purbalingga</h2>
-            <p class="text-gray-600 mt-1">Mereka yang menginspirasi perjuangan dan pembangunan daerah.</p>
-          </div>
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl md:text-[34px] leading-none font-semibold text-[#5a371c]">
+            Tokoh Purbalingga
+          </h2>
+          <a href="/tokoh"
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#8b5e34]
+                    text-[#6b3f1f] hover:bg-[#8b5e34]/10 transition">
+            <span class="text-[15px]">Lihat Selengkapnya</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
+        <div class="mt-4 h-px bg-[#8b5e34]/60"></div>
+      </div>
 
-        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {{-- Card --}}
-          <article class="group rounded-xl overflow-hidden border bg-white hover:shadow-md transition">
-            <div class="aspect-[4/3] bg-gray-100">
-              <img src="/images/soedirman.jpeg" alt="Jenderal Soedirman"
-                   class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy" decoding="async">
-            </div>
-            <div class="p-3">
-              <p class="text-green-700 text-xs font-semibold">Tokoh</p>
-              <h3 class="font-medium">Jenderal Soedirman</h3>
-              <p class="text-xs text-gray-500">1916–1950 • Panglima Besar TNI</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-gray-600 mt-5">Beberapa tokoh besar dari Purbalingga yang memberi warna bagi sejarah dan budaya.</p>
+
+        {{-- Grid tokoh (4 highlight) --}}
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {{-- Jenderal Soedirman --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/soedirman.jpeg" alt="Jenderal Soedirman"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Jenderal Soedirman</h3>
+              <p class="text-sm text-gray-200">Panglima TNI, Pahlawan Nasional</p>
             </div>
           </article>
 
-          <article class="group rounded-xl overflow-hidden border bg-white hover:shadow-md transition">
-            <div class="aspect-[4/3] bg-gray-100">
-              <img src="/images/pbg.jpg" alt="Ahmad Yani"
-                   class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy" decoding="async">
-            </div>
-            <div class="p-3">
-              <p class="text-green-700 text-xs font-semibold">Tokoh</p>
-              <h3 class="font-medium">Ahmad Yani</h3>
-              <p class="text-xs text-gray-500">1922–1965 • Pahlawan Revolusi</p>
+          {{-- Mayjend Soengkono --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/soengkono.jpg" alt="Mayjend Soengkono"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Mayjend Soengkono</h3>
+              <p class="text-sm text-gray-200">Tokoh Pertempuran Surabaya 1945</p>
             </div>
           </article>
 
-          <article class="group rounded-xl overflow-hidden border bg-white hover:shadow-md transition">
-            <div class="aspect-[4/3] bg-gray-100">
-              <img src="/images/masjid.jpg" alt="Nama Tokoh"
-                   class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy" decoding="async">
-            </div>
-            <div class="p-3">
-              <p class="text-green-700 text-xs font-semibold">Tokoh</p>
-              <h3 class="font-medium">Nama Tokoh</h3>
-              <p class="text-xs text-gray-500">Perintis pendidikan & kebudayaan</p>
+          {{-- Usman Janatin --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/usman-janatin.jpg" alt="Usman Janatin"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Usman Janatin</h3>
+              <p class="text-sm text-gray-200">Pahlawan Dwikora</p>
             </div>
           </article>
 
-          <article class="group rounded-xl overflow-hidden border bg-white hover:shadow-md transition">
-            <div class="aspect-[4/3] bg-gray-100">
-              <img src="/images/stasiun.jpg" alt="Nama Tokoh"
-                   class="w-full h-full object-cover group-hover:scale-[1.02] transition" loading="lazy" decoding="async">
-            </div>
-            <div class="p-3">
-              <p class="text-green-700 text-xs font-semibold">Tokoh</p>
-              <h3 class="font-medium">Nama Tokoh</h3>
-              <p class="text-xs text-gray-500">Kontributor pembangunan daerah</p>
+          {{-- Indro Warkop --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/indro.jpg" alt="Indro Warkop"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Indro (Warkop DKI)</h3>
+              <p class="text-sm text-gray-200">Komedian, Budaya Populer</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    {{-- PEMBATAS GARIS --}}
-    <div class="h-px bg-gray-300"></div>
-
-    {{-- EKSPLOR MENU --}}
-    <section class="bg-[#FAF4E1] py-10 md:py-14">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-6">
-        <a href="/kuliner" class="group flex items-start justify-between gap-3 rounded-2xl border bg-white p-4 hover:shadow-md hover:-translate-y-[2px] transition">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-[#C59867]">Eksplor</p>
-            <h4 class="font-semibold">Kuliner Purbalingga</h4>
-            <p class="text-sm text-gray-600">Sroto, buntil, mendoan, dan lainnya.</p>
-          </div>
-          <span class="mt-1 opacity-0 group-hover:opacity-100 transition">→</span>
-        </a>
-
-        <a href="/senitradisi" class="group flex items-start justify-between gap-3 rounded-2xl border bg-white p-4 hover:shadow-md hover:-translate-y-[2px] transition">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-[#C59867]">Eksplor</p>
-            <h4 class="font-semibold">Seni & Tradisi</h4>
-            <p class="text-sm text-gray-600">Ebeg, lengger, kentongan, karawitan.</p>
-          </div>
-          <span class="mt-1 opacity-0 group-hover:opacity-100 transition">→</span>
-        </a>
-
-        <a href="/batik" class="group flex items-start justify-between gap-3 rounded-2xl border bg-white p-4 hover:shadow-md hover:-translate-y-[2px] transition">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-[#C59867]">Eksplor</p>
-            <h4 class="font-semibold">Batik Daerah</h4>
-            <p class="text-sm text-gray-600">Motif lokal bernuansa lereng Slamet.</p>
-          </div>
-          <span class="mt-1 opacity-0 group-hover:opacity-100 transition">→</span>
-        </a>
-      </div>
-    </section>
   </main>
 
   {{-- FOOTER --}}

@@ -37,3 +37,6 @@ Route::get('/tentang', function () {
 Route::get('/kuliner', function () {
     return view('kuliner');
 });
+Route::get('/tokoh', function () {
+    return view('tokoh');
+});
