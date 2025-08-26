@@ -13,6 +13,9 @@ use App\Http\Controllers\TranslateController;
 |
 */
 
+Route::get('', function () {
+    return view('welcome');
+});
 Route::get('/home', function () {
     return view('home');
 });
@@ -28,4 +31,16 @@ Route::get('/batik', function () {
 Route::get('/bahasa', function () {
     return view('bahasa');
 });
-Route::post('/translate', [TranslateController::class, 'translate'])->name('translate');
+
+// Route::post('/translate', [TranslateController::class, 'translate'])->name('translate');
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+Route::get('/kuliner', function () {
+    return view('kuliner');
+});
+Route::get('/tokoh', function () {
+    return view('tokoh');
+});
+

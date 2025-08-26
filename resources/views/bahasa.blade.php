@@ -14,6 +14,7 @@
     </style>
 </head>
 
+
 <body class="bg-[#f6efe3]">
     {{-- Navbar --}}
     @include('navbar')
@@ -216,3 +217,4 @@
 
 </body>
 </html>
+

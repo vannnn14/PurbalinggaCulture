@@ -1,198 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purba Culture</title>
-    @vite('resources/css/app.css')
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sejarah — Purbalingga Culture</title>
+  <meta name="description" content="Sejarah Purbalingga: tokoh, peristiwa dan peninggalan yang membentuk kabupaten.">
+  @vite('resources/css/app.css')
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-[#FFECD1] ">
-    <!-- Navbar Start -->
-    @include('navbar')
-    <!-- Navbar End -->
+<body class="antialiased text-gray-800">
+  {{-- NAVBAR --}}
+  @include('navbar')
 
-    <section>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto pt-8">
-            <!-- Kolom Kiri -->
-            <div class="space-y-6">
-                <!-- Highlight Box -->
+  <main id="content" class="scroll-smooth">
 
-                <!-- Paragraf Sejarah -->
+    {{-- HERO (teks + gambar) --}}
+    <section class="bg-[#FFECD1]/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <article class="space-y-6">
+          <header class="space-y-2">
+            <p class="text-xs uppercase tracking-wider text-[#C59867]">Purbalingga</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Sejarah Purbalingga</h1>
+            <p class="text-gray-700">Lini masa berdirinya kabupaten, tokoh penting, dan peristiwa berpengaruh.</p>
+          </header>
 
-                <div class="bg-[#F8EED6] p-6 pt-5 rounded-lg shadow text-gray-700 text-sm leading-relaxed space-y-4">
-                    <h2 class="text-3xl font-bold  text-gray-900">Tentang Sejarah Purbalingga</h2>
-                    <p class="text-gray-800 text-sm leading-relaxed">
-                    Kyai Arsantaka, yang pada masa mudanya bernama Kyai Arsakusuma, adalah putra Bupati Onje II dan
-                        menjadi tokoh penting dalam sejarah Purbalingga. Setelah meninggalkan Kadipaten Onje, ia
-                        berkelana ke timur dan diambil sebagai anak angkat oleh Kyai Wanakusuma di desa Masaran. Pada
-                        tahun 1740–1760, ia menjabat sebagai demang di Kademangan Pagendolan di bawah pemerintahan
-                        Tumenggung Dipayuda I dari Karanglewas.
-                    </p>
-                    <p>
-                       
-                    </p>
-                    <p>
-                         Banyak riwayat yang menceritakan tenang heroisme dari Kyai Arsantaka antara lain ketika terjadi
-                        perang Jenar, yang merupakan bagian dari perang Mangkubumen, yakni sebuah peperangan antara
-                        Pangeran Mangkubumi dengan kakaknya Paku Buwono II dikarenakan Pangeran mangkubumi tidak puas
-                        terhadap sikap kakanya yang lemah terhadap kompeni Belanda. Dalam perang jenar ini, Kyai
-                        Arsantaka berada didalam pasukan kadipaten Banyumas yang membela Paku Buwono. Dikarenakan jasa
-                        dari Kyai Arsantaka kepada Kadipaten Banyumas pada perang Jenar, maka Adipati banyumas R.
-                        Tumenggung Yudanegara mengangkat putra Kyai Arsantaka yang bernama Kyai Arsayuda menjadi
-                        menantu. Seiring dengan berjalannya waktu, maka putra Kyai Arsantaka yakni Kyai Arsayuda menjadi
-                        Tumenggung Karangwelas dan bergelar Raden Tumenggung Dipayuda III.Masa masa pemerintahan Kyai
-                        Arsayuda dan atas saran dari  ayahnya yakni Kyai Arsantaka yang bertindak sebagai penasihat,
+          <div class="bg-[#F8EED6] p-6 rounded-xl shadow-sm ring-1 ring-black/5 text-[15px] leading-relaxed space-y-4">
+            <p><strong>Kyai Arsantaka</strong> (Arsakusuma), putra Bupati Onje II, menjadi sosok sentral. Ia diangkat anak oleh Kyai Wanakusuma di Masaran dan pada 1740–1760 menjabat demang di Pagendolan di bawah Tumenggung Dipayuda I.</p>
+            <p>Dalam <em>Perang Jenar</em> (bagian dari perang Mangkubumen), Kyai Arsantaka berpihak pada Kadipaten Banyumas yang membela Paku Buwono. Atas jasanya, Adipati Banyumas R.T. Yudanegara mengangkat putranya, <strong>Kyai Arsayuda</strong>, menjadi menantu.</p>
+            <p>Kelak, Kyai Arsayuda menjadi Tumenggung Karangwelas bergelar <strong>R.T. Dipayuda III</strong> dan memindahkan pusat pemerintahan ke desa Purbalingga—yang berkembang menjadi pusat kabupaten hingga kini.</p>
+          </div>
+        </article>
 
-                    </p>
-                    <p>
-                        Setelah dewasa, ia diberi amanah untuk meninggalkan Kadipaten Onje untuk berkelana ke arah timur
-                        dan akhirnya
-                    </p>
-                </div>
-            </div>
-
-            <!-- Kolom Kanan -->
-            <div class="flex justify-center items-center ">
-                <img src="/images/gambarsejarah.png" alt="Sejarah Purbalingga" class="w-full  h-auto rounded-xl ">
-                <!-- max-w-md -->
-            </div>
-        </div>
-        <section class="w-full bg-black py-12">
-            <div x-data="{ current: 0, slides: [
-        { img: '/images/pbg.jpg', text: 'Alun Alun Selatan Tempo Dulu ...' },
-        { img: '/images/stasiun.jpg', text: 'Stasiun Poerbolinggo ...' },
-        { img: '/images/masjid.jpg', text: 'Masjid Agung Darussalam ...' }
-    ] }" class="relative flex justify-center w-full">
-
-                <div class="relative w-full max-w-7xl overflow-hidden">
-                    <!-- Slide -->
-                    <template x-for="(slide, index) in slides" :key="index">
-                        <div x-show="current === index"
-                            class="relative w-full h-[500px] transition-all duration-700 ease-in-out">
-
-                            <!-- Gambar -->
-                            <img :src="slide.img" class="w-full h-full object-cover" alt="Sejarah">
-
-                            <!-- Overlay teks -->
-                            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                                <p class="text-white text-xl md:text-3xl font-semibold max-w-3xl text-center px-6"
-                                    x-text="slide.text">
-                                </p>
-                            </div>
-                        </div>
-                    </template>
-
-                    <!-- Tombol Prev / Next -->
-                    <div class="absolute inset-0 flex items-center justify-between px-4">
-                        <button @click="current = (current === 0) ? slides.length - 1 : current - 1"
-                            class="bg-black/60 text-white px-3 py-1 rounded  cursor-pointer">&lt</button>
-                        <button @click="current = (current === slides.length - 1) ? 0 : current + 1"
-                            class="bg-black/60 text-white px-3 py-1 rounded cursor-pointer">&gt</button>
-                    </div>
-
-                    <!-- Dots indicator -->
-                    <div class="absolute bottom-4 w-full flex justify-center space-x-2">
-                        <template x-for="(slide, index) in slides" :key="index">
-                            <button @click="current = index" class="w-3 h-3 rounded-full"
-                                :class="current === index ? 'bg-white' : 'bg-gray-400'">
-                            </button>
-                        </template>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--         
-        <div class="bg-[#F8EED6] p-6 rounded-lg shadow text-gray-700 text-sm leading-relaxed ">
-            <p class="text-gray-800 text-sm leading-relaxed">
-                Sesudah dewasa diceritakan bahwa kyai Arsakusuma meninggalkan Kadipaten Onje untuk berkelana ke arah
-                timur dan sesampainya di desa Masaran  (Sekarang di Kecamatan Bawang, Kabupaten Banjarnegara) diambil
-                anak angkat oleh Kyai Wanakusuma yang masih anak keturunan Kyai Ageng Giring dari Mataram. Pada tahun
-                1740 ? 1760, Kyai Arsantaka menjadi demang di Kademangan Pagendolan (sekarang termasuk wilayah desa
-                Masaran), suatu wilayah yang masih berada dibawah pemerintahan Karanglewas (sekarang termasuk kecamatan
-                Kutasari, Purbalingga) yang dipimpin oleh Tumenggung Dipayuda I. Banyak riwayat yang menceritakan tenang
-                heroisme dari Kyai Arsantaka antara lain ketika terjadi perang Jenar, yang merupakan bagian dari perang
-                Mangkubumen, yakni sebuah peperangan antara Pangeran Mangkubumi dengan kakaknya Paku Buwono II
-                dikarenakan Pangeran mangkubumi tidak puas terhadap sikap kakanya yang lemah terhadap kompeni Belanda.
-                Dalam perang jenar ini, Kyai Arsantaka berada didalam pasukan kadipaten Banyumas yang membela Paku
-                Buwono. Dikarenakan jasa dari Kyai Arsantaka kepada Kadipaten Banyumas pada perang Jenar, maka Adipati
-                banyumas R. Tumenggung Yudanegara mengangkat putra Kyai Arsantaka yang bernama Kyai Arsayuda menjadi
-                menantu. Seiring dengan berjalannya waktu, maka putra Kyai Arsantaka yakni Kyai Arsayuda menjadi
-                Tumenggung Karangwelas dan bergelar Raden Tumenggung Dipayuda III.Masa masa pemerintahan Kyai Arsayuda
-                dan atas saran dari  ayahnya yakni Kyai Arsantaka yang bertindak sebagai penasihat, maka  pusat
-                pemerintahan dipiindah dari Karanglewas ke desa Purbalingga yang diikuti dengan pembangunan pendapa
-                Kabupaten dan alun-alun. Nama Purbalingga ini bisa kita dapati didalam kisah-kisah babad. Adapun Kitab
-                babad yang berkaitan dan menyebut Purbalingga diantaranya adalah Babad Onje, Babad Purbalingga, Babad
-                Banyumas dan Babad Jambukarang. Selain dengan empat buah kitap babat tsb, maka dalam  merekonstruksi
-                sejarah Purbalingga, juga melihat arsip-arsip peninggalan Pemerintah Hindia Belanda yang tersimpan dalam
-                koleksi Aarsip Nasional Republik Indonesia.Berdasarkan sumber-sumber diatas, maka melalui Peraturan
-                daerah (perda) No. 15 Tahun 1996 tanggal 19 Nopember 1996, ditetapkan bahwa hari jadi Kabupaten
-                Purbalingga adalah 18 Desember 1830 atau 3 Rajab 1246 Hijriah atau 3 Rajab 1758 Je. </p>
-        </div> -->
+        <figure class="flex justify-center items-start">
+          <div class="w-full max-w-xl aspect-[4/3] bg-gray-200/40 rounded-xl overflow-hidden shadow">
+            <img src="/images/gambarsejarah.png" alt="Ilustrasi sejarah Purbalingga"
+                 class="w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="sr-only">Ilustrasi pemindahan pusat pemerintahan ke Purbalingga.</figcaption>
+        </figure>
+      </div>
     </section>
 
+    {{-- PEMBATAS GARIS --}}
+    <div class="h-px bg-gray-300"></div>
 
-   <!--Garis Pembatas  -->
-<section >
-<div class="h-1 bg-[#09cd88]">
-</div>
-</section>
-  <!-- Start Tokoh Purbalingga -->
-  <section class="max-8xl mx-auto p-6">
-  <h1 class="text-3xl font-bold mb-6 text-gray-900">Tokoh Purbalingga</h1>
+    {{-- CAROUSEL TANPA BLINK (translateX, manual only) --}}
+    <section class="bg-[#1c1005] py-6 md:py-10">
+      <header class="max-w-7xl mx-auto px-4 sm:px-6 text-white/80 pb-3">
+        <p class="text-xs uppercase tracking-wider">Lini Masa Visual</p>
+        <h2 class="text-xl md:text-2xl font-semibold text-white">Potret Purbalingga Tempo Dulu</h2>
+      </header>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    
-    <!-- Card -->
-    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
-      <img src="/images/soedirman.jpeg" alt="Tokoh 1"
-           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
-      <div class="mt-3 px-1">
-        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
-        <p class="text-gray-900 font-medium text-base">Jendral Soedirman</p>
+      <div
+        x-data="{
+          current: 0,
+          slides: [
+            { img:'/images/pbg.jpg',     text:'Alun-Alun Selatan tempo dulu' },
+            { img:'/images/stasiun.jpg', text:'Stasiun Poerbolinggo' },
+            { img:'/images/masjid.jpg',  text:'Masjid Agung Darussalam' }
+          ],
+          next(){ this.current = (this.current + 1) % this.slides.length },
+          prev(){ this.current = (this.current - 1 + this.slides.length) % this.slides.length },
+          go(i){ this.current = i }
+        }"
+        class="relative max-w-7xl mx-auto px-4 sm:px-6"
+        aria-roledescription="carousel" aria-label="Arsip Purbalingga"
+      >
+        <!-- Viewport -->
+        <div class="relative overflow-hidden rounded-lg">
+          <!-- Track -->
+          <div class="flex transition-transform duration-500 ease-out will-change-[transform]"
+               :style="`transform: translateX(-${current * 100}%);`">
+
+            <!-- Slides -->
+            <template x-for="(slide, i) in slides" :key="i">
+              <div class="min-w-full relative">
+                <div class="w-full aspect-[16/9] md:h-[520px]">
+                  <img :src="slide.img" :alt="slide.text"
+                       class="w-full h-full object-cover" loading="eager" decoding="async">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 flex items-center justify-center px-6 pointer-events-none">
+                  <p class="text-white text-xl md:text-3xl font-semibold text-center max-w-3xl" x-text="slide.text"></p>
+                </div>
+              </div>
+            </template>
+          </div>
+
+          <!-- Controls -->
+          <div class="absolute inset-0 flex items-center justify-between px-2 md:px-4">
+            <button @click="prev"
+              class="bg-black/60 hover:bg-black/75 text-white px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label="Sebelumnya">⟨</button>
+            <button @click="next"
+              class="bg-black/60 hover:bg-black/75 text-white px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label="Berikutnya">⟩</button>
+          </div>
+
+          <!-- Dots -->
+          <div class="absolute bottom-3 md:bottom-4 w-full flex justify-center gap-2">
+            <template x-for="(slide, i) in slides" :key="`dot-${i}`">
+              <button @click="go(i)"
+                class="w-3 h-3 rounded-full ring-1 ring-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                :class="current===i ? 'bg-white' : 'bg-white/40'"
+                :aria-label="`Ke slide ${i+1}`" :aria-current="current===i"></button>
+            </template>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Card -->
-    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
-      <img src="/images/pbg.jpg" alt="Tokoh 2"
-           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
-      <div class="mt-3 px-1">
-        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
-        <p class="text-gray-900 font-medium text-base">Ahmad Yani</p>
+    {{-- PEMBATAS GARIS --}}
+    <div class="h-px bg-gray-300"></div>
+
+    {{-- TOKOH PURBALINGGA (header + 4 highlight + CTA) --}}
+    <section id="tokoh" class="py-12 bg-white">
+      {{-- Header ala screenshot: judul kiri + tombol kanan + garis --}}
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl md:text-[34px] leading-none font-semibold text-[#5a371c]">
+            Tokoh Purbalingga
+          </h2>
+          <a href="/tokoh"
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#8b5e34]
+                    text-[#6b3f1f] hover:bg-[#8b5e34]/10 transition">
+            <span class="text-[15px]">Lihat Selengkapnya</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="mt-4 h-px bg-[#8b5e34]/60"></div>
       </div>
-    </div>
 
-    <!-- Card -->
-    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
-      <img src="/images/masjid.jpg" alt="Tokoh 3"
-           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
-      <div class="mt-3 px-1">
-        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
-        <p class="text-gray-900 font-medium text-base">Tokoh Lain</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-gray-600 mt-5">Beberapa tokoh besar dari Purbalingga yang memberi warna bagi sejarah dan budaya.</p>
+
+        {{-- Grid tokoh (4 highlight) --}}
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {{-- Jenderal Soedirman --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/soedirman.jpeg" alt="Jenderal Soedirman"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Jenderal Soedirman</h3>
+              <p class="text-sm text-gray-200">Panglima TNI, Pahlawan Nasional</p>
+            </div>
+          </article>
+
+          {{-- Mayjend Soengkono --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/soengkono.jpg" alt="Mayjend Soengkono"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Mayjend Soengkono</h3>
+              <p class="text-sm text-gray-200">Tokoh Pertempuran Surabaya 1945</p>
+            </div>
+          </article>
+
+          {{-- Usman Janatin --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/usman-janatin.jpg" alt="Usman Janatin"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Usman Janatin</h3>
+              <p class="text-sm text-gray-200">Pahlawan Dwikora</p>
+            </div>
+          </article>
+
+          {{-- Indro Warkop --}}
+          <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img src="/images/indro.jpg" alt="Indro Warkop"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4 transition group-hover:bg-black/60">
+              <h3 class="text-lg font-semibold text-white">Indro (Warkop DKI)</h3>
+              <p class="text-sm text-gray-200">Komedian, Budaya Populer</p>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Card -->
-    <div class="overflow-hidden rounded-lg shadow group cursor-pointer">
-      <img src="/images/stasiun.jpg" alt="Tokoh 4"
-           class="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-110">
-      <div class="mt-3 px-1">
-        <p class="text-green-700 font-semibold text-sm">Tokoh</p>
-        <p class="text-gray-900 font-medium text-base">Tokoh Lainnya</p>
-      </div>
-    </div>
+  </main>
 
-  </div>
-</section>
-<!-- End Tokoh Purbalingga -->
-
-<section>
-    @include('footer')
-</section>
+  {{-- FOOTER --}}
+  @include('footer')
 </body>
-
 </html>
