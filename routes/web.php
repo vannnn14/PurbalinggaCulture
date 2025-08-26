@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('', function () {
+    return view('welcome');
+});
 Route::get('/home', function () {
     return view('home');
 });
@@ -27,4 +30,10 @@ Route::get('/batik', function () {
 });
 Route::get('/bahasa', function () {
     return view('bahasa');
+});
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+Route::get('/kuliner', function () {
+    return view('kuliner');
 });
