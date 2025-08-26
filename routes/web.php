@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TranslateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,4 @@ Route::get('/batik', function () {
 Route::get('/bahasa', function () {
     return view('bahasa');
 });
+Route::post('/translate', [TranslateController::class, 'translate'])->name('translate');
