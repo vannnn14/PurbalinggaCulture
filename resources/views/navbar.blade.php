@@ -79,8 +79,7 @@
                     class="absolute left-0 mt-2 w-56 bg-[#FFECD1] border border-gray-200 rounded-lg shadow-lg py-2 text-black z-50">
                   <li><a href="/sejarah"     class="block px-4 py-2 rounded-md hover:bg-[#C59867] hover:text-white">Sejarah Purbalingga</a></li>
                   <li><a href="/senitradisi" class="block px-4 py-2 rounded-md hover:bg-[#C59867] hover:text-white">Seni & Tradisi Lokal</a></li>
-                  <li><a href="/cerita"      class="block px-4 py-2 rounded-md hover:bg-[#C59867] hover:text-white">Cerita Rakyat</a></li>
-                  <li><a href="/batik"       class="block px-4 py-2 rounded-md hover:bg-[#C59867] hover:text-white">Batik Daerah</a></li>
+                <li><a href="/batik"       class="block px-4 py-2 rounded-md hover:bg-[#C59867] hover:text-white">Batik Daerah</a></li>
                 </ul>
               </li>
 
@@ -110,7 +109,6 @@
                      class="mt-1 mx-3 bg-[#FFECD1] text-black rounded-lg overflow-hidden">
                   <a href="/sejarah"     class="block px-4 py-2 hover:bg-[#C59867] hover:text-white">Sejarah Purbalingga</a>
                   <a href="/senitradisi" class="block px-4 py-2 hover:bg-[#C59867] hover:text-white">Seni & Tradisi Lokal</a>
-                  <a href="/cerita"      class="block px-4 py-2 hover:bg-[#C59867] hover:text-white">Cerita Rakyat</a>
                   <a href="/batik"       class="block px-4 py-2 hover:bg-[#C59867] hover:text-white">Batik Daerah</a>
                 </div>
               </div>

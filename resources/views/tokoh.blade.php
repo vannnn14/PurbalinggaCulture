@@ -13,7 +13,7 @@
 
   @php
   $people = [
-    ['name'=>'Jenderal Soedirman','role'=>'Panglima TNI, Pahlawan Nasional','img'=>'images/soedirman.jpeg','slug'=>'soedirman','desc'=>'Panglima perang gerilya yang tetap memimpin meski sakit parah.'],
+    ['name'=>'Jenderal Soedirman','role'=>'Panglima TNI, Pahlawan Nasional','img'=>'images/jendrallandscape.jpeg','slug'=>'soedirman','desc'=>'Panglima perang gerilya yang tetap memimpin meski sakit parah.'],
     ['name'=>'Mayjend Soengkono','role'=>'Tokoh pertempuran Surabaya 1945','img'=>'images/soengkono.jpg','slug'=>'soengkono','desc'=>'Komandan gagah berani yang mengobarkan semangat 10 November.'],
     ['name'=>'Mas Pirngadi','role'=>'Seniman & etnografer','img'=>'images/mas-pirngadi.jpg','slug'=>'mas-pirngadi','desc'=>'Mengabadikan budaya Nusantara lewat karya dan etnografi.'],
     ['name'=>'Usman Janatin','role'=>'Pahlawan Dwikora','img'=>'images/usman-janatin.jpg','slug'=>'usman-janatin','desc'=>'Prajurit pemberani yang gugur demi tanah air.'],
@@ -40,7 +40,7 @@
       <div class="relative h-64 md:h-80 lg:h-[380px] w-full overflow-hidden">
         <img src="{{ asset($featured['img']) }}" alt="{{ $featured['name'] }}"
              class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/30 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
         <div class="absolute inset-0 flex flex-col justify-end md:justify-center max-w-7xl mx-auto px-4 sm:px-6 pb-6">
           <p class="text-white/80 text-xs uppercase tracking-wider">Tokoh </p>
           <h1 class="text-white text-2xl md:text-4xl font-bold mt-1">{{ $featured['name'] }}</h1>
