@@ -43,4 +43,7 @@ Route::get('/kuliner', function () {
 Route::get('/tokoh', function () {
     return view('tokoh');
 });
-
+Route::get('/berita', function () {
+    return view('beritatokoh');
+});
+Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'index'])->name('berita');
