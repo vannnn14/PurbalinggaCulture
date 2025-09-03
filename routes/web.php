@@ -30,7 +30,7 @@ Route::get('/batik', function () {
 });
 Route::get('/bahasa', function () {
     return view('bahasa');
-});
+})->name('bahasa');
 
 // Route::post('/translate', [TranslateController::class, 'translate'])->name('translate');
 
