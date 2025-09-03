@@ -14,7 +14,7 @@
    <!-- Navbar -->
     @include('navbar')
   <!-- Hero Section -->
-  <section class="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1583259032331-4c2e8eeb3d06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+  <section class="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center bg-[url('/images/bgsenitradisi.jpg')]">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
     <div class="relative z-10 text-center px-4" data-aos="fade-up">
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Seni & Tradisi Lokal Purbalingga</h1>
@@ -53,17 +53,18 @@
         Seni adalah ekspresi kreatif manusia yang melibatkan berbagai bentuk karya, baik visual, audio, maupun pertunjukan, yang bertujuan untuk menyampaikan ide, perasaan, atau pengalaman.
       </p>
       <div class="grid md:grid-cols-3 gap-8">
-        <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lengger_Lanang_01.jpg/640px-Lengger_Lanang_01.jpg" alt="Tari Lengger" class="w-full h-48 object-cover">
-          <h3 class="p-4 font-semibold">Tari Lengger</h3>
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="{{ asset('images/tarilengger.jpg') }}" alt="Tari Lengger" class="w-full h-48 object-cover">
+            <h3 class="p-4 font-semibold">Tari Lengger</h3>
         </div>
         <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Kuda_Lumping_1.jpg" alt="Kuda Lumping" class="w-full h-48 object-cover">
-          <h3 class="p-4 font-semibold">Kuda Lumping</h3>
+            <img src="{{ asset('images/tarilengger.jpg') }}" alt="Tari Lengger" class="w-full h-48 object-cover">
+            <h3 class="p-4 font-semibold">Tari Lengger</h3>
         </div>
-        <div data-aos="fade-up" data-aos-delay="400" class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-          <img src="https://radarbanyumas.disway.id/upload/2516edb3925e20ad8267ddf94bb2fcfc.jpg" alt="Tradisi Begalan" class="w-full h-48 object-cover">
-          <h3 class="p-4 font-semibold">Tradisi Begalan</h3>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="{{ asset('images/tarilengger.jpg') }}" alt="Tari Lengger" class="w-full h-48 object-cover">
+            <h3 class="p-4 font-semibold">Tari Lengger</h3>
         </div>
       </div>
     </div>
