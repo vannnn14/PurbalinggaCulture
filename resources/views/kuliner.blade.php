@@ -68,7 +68,7 @@
         <article class="lg:col-span-2 group">
           <a href="#" class="block rounded-xl overflow-hidden border border-[#8B5E3C]/60 sm:border-[#8B5E3C] shadow hover:shadow-md transition">
             <div class="aspect-[16/9]">
-              <img src="{{ asset('images/mendoan.jpg') }}" alt="Tempe Mendoan"
+              <img src="{{ asset('images/mendoan.png') }}" alt="Tempe Mendoan"
                    class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300">
             </div>
             <div class="p-4 sm:p-5">
@@ -87,10 +87,10 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           @php
             $items = [
-              ['img'=>'images/kripik-tempe.jpg', 'tag'=>'Oleh-oleh', 'title'=>'Kriuk Renyah Keripik Tempe Purbalingga'],
-              ['img'=>'images/nopia.jpg', 'tag'=>'Tradisi', 'title'=>'Nopia dan Cerita Kue Bakar dari Banyumas Raya'],
+              ['img'=>'images/keripik.jpg', 'tag'=>'Oleh-oleh', 'title'=>'Kriuk Renyah Keripik Tempe Purbalingga'],
+              ['img'=>'images/nopia.jpeg', 'tag'=>'Tradisi', 'title'=>'Nopia dan Cerita Kue Bakar dari Banyumas Raya'],
               ['img'=>'images/getuk.jpg', 'tag'=>'Camilan', 'title'=>'Getuk Goreng Sokaraja yang Manis dan Legit'],
-              ['img'=>'images/sate-blater.jpg', 'tag'=>'Kuliner Malam', 'title'=>'Sate Blater — Kuliner Malam Legendaris'],
+              ['img'=>'images/sate.jpg', 'tag'=>'Kuliner Malam', 'title'=>'Sate Blater — Kuliner Malam Legendaris'],
             ];
           @endphp
 

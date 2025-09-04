@@ -90,7 +90,7 @@
         ['title'=>'Seni & Tradisi','img'=>'kentongan.png','link'=>'/senitradisi'],
         ['title'=>'Tokoh Purbalingga','img'=>'tokoh1.png','link'=>'/tokoh'],
         ['title'=>'Wisata','img'=>'owabong1.png','link'=>'/wisata'],
-        ['title'=>'Kuliner','img'=>'mendoann.png','link'=>'/kuliner']
+        ['title'=>'Kuliner','img'=>'mendoan1.jpg','link'=>'/kuliner']
       ] as $menu)
       <a href="{{ $menu['link'] }}"
         class="group relative block rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
@@ -154,10 +154,10 @@
       <div class="swiper-wrapper">
         @foreach ([
         ['judul'=>'Sejarah Batik Purbalingga','isi'=>'Mengenal batik khas Purbalingga yang unik dan bersejarah.','img'=>'batik.jpg'],
-        ['judul'=>'Tradisi Kuda Lumping','isi'=>'Kesenian rakyat penuh makna spiritual dan kebersamaan.','img'=>'kuda-lumping.jpg'],
+        ['judul'=>'Tradisi Kuda Lumping','isi'=>'Kesenian rakyat penuh makna spiritual dan kebersamaan.','img'=>'ebeg.jpg'],
         ['judul'=>'Kuliner Dawet Ayu','isi'=>'Segarnya minuman tradisional khas Purbalingga.','img'=>'dawet.jpg'],
         ['judul'=>'Seni Tari Lengger','isi'=>'Pesona tari tradisional Lengger yang khas Purbalingga.','img'=>'lengger.jpg'],
-        ['judul'=>'Gotong Royong','isi'=>'Nilai luhur kebersamaan masyarakat Purbalingga.','img'=>'gotongroyong.jpg']
+        ['judul'=>'Gotong Royong','isi'=>'Nilai luhur kebersamaan masyarakat Purbalingga.','img'=>'gotong.jpg']
         ] as $artikel)
         <div class="swiper-slide">
           <div

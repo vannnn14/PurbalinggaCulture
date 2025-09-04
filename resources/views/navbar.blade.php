@@ -29,8 +29,8 @@
       "
       :class="hidden ? '-translate-y-full' : 'translate-y-0'"
       class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300
-            bg-cover bg-center border-b text-white"
-      style="">
+            bg-cover bg-center border-b text-white">
+      
 
       <!-- Overlay warna coklat -->
       <div class="absolute inset-0 bg-[#532700] opacity-100"></div>

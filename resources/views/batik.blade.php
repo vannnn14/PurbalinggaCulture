@@ -58,15 +58,15 @@
       {{-- Grid gambar kiri --}}
       <div class="grid grid-cols-2 gap-6 order-1 md:order-none">
         <div class="rounded-2xl overflow-hidden shadow-lg">
-          <img src="{{ asset('images/batik-tulis.jpg') }}" alt="Proses Batik Tulis"
+          <img src="{{ asset('images/tulis.jpg') }}" alt="Proses Batik Tulis"
                class="w-full h-48 sm:h-64 object-cover" loading="lazy">
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg row-start-2">
-          <img src="{{ asset('images/batik-cap.jpg') }}" alt="Proses Batik Cap"
+          <img src="{{ asset('images/cap.jpg') }}" alt="Proses Batik Cap"
                class="w-full h-48 sm:h-64 object-cover" loading="lazy">
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg col-span-2">
-          <img src="{{ asset('images/batik-printing.jpg') }}" alt="Batik Printing"
+          <img src="{{ asset('images/printing.jpg') }}" alt="Batik Printing"
                class="w-full h-48 sm:h-72 object-cover" loading="lazy">
         </div>
       </div>
@@ -103,7 +103,7 @@
       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {{-- Kartu 1 --}}
         <article class="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition group">
-          <img src="{{ asset('images/motif-lava.jpg') }}" alt="Motif Batik Lava"
+          <img src="{{ asset('images/lava1.jpg') }}" alt="Motif Batik Lava"
                class="w-full h-44 object-cover group-hover:scale-[1.02] transition">
           <div class="p-4 text-left">
             <h4 class="font-semibold">Motif Batik Lava</h4>
@@ -113,7 +113,7 @@
 
         {{-- Kartu 2 --}}
         <article class="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition group">
-          <img src="{{ asset('images/motif-lumban.jpg') }}" alt="Motif Batik Lumban"
+          <img src="{{ asset('images/lumban.jpg') }}" alt="Motif Batik Lumban"
                class="w-full h-44 object-cover group-hover:scale-[1.02] transition">
           <div class="p-4 text-left">
             <h4 class="font-semibold">Motif Batik Lumban</h4>
@@ -123,7 +123,7 @@
 
         {{-- Kartu 3 --}}
         <article class="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition group">
-          <img src="{{ asset('images/motif-merak.jpg') }}" alt="Motif Merak"
+          <img src="{{ asset('images/merak.jpg') }}" alt="Motif Merak"
                class="w-full h-44 object-cover group-hover:scale-[1.02] transition">
           <div class="p-4 text-left">
             <h4 class="font-semibold">Motif Merak</h4>
@@ -144,13 +144,13 @@
         <div class="flex gap-4 md:gap-6 snap-x snap-mandatory pb-2">
           @php
             $steps = [
-              ['img'=>'images/step-1-kain.jpg',     'title'=>'Menyiapkan Kain',   'desc'=>'Pencucian & pengelantangan agar warna meresap'],
-              ['img'=>'images/step-2-sketsa.jpg',   'title'=>'Membuat Sketsa',    'desc'=>'Rancang motif sesuai pakem/motif lokal'],
-              ['img'=>'images/step-3-tulis.jpg',    'title'=>'Mencanting',        'desc'=>'Tarik garis malam sebagai perintang'],
-              ['img'=>'images/step-4-celup.jpg',    'title'=>'Pewarnaan/Celup',   'desc'=>'Pencelupan bertahap untuk kedalaman warna'],
-              ['img'=>'images/step-5-colet.jpg',    'title'=>'Colet/Detail',      'desc'=>'Pewarnaan manual pada bagian tertentu'],
-              ['img'=>'images/step-6-lorod.jpg',    'title'=>'Pelorodan',         'desc'=>'Melepas malam dan finishing kain'],
-              ['img'=>'images/step-7-jadi.jpg',     'title'=>'Siap Dipakai',      'desc'=>'Kain batik selesai—siap dijahit/dipakai'],
+              ['img'=>'images/kain.jpg',     'title'=>'Menyiapkan Kain',   'desc'=>'Pencucian & pengelantangan agar warna meresap'],
+              ['img'=>'images/sketsa.jpg',   'title'=>'Membuat Sketsa',    'desc'=>'Rancang motif sesuai pakem/motif lokal'],
+              ['img'=>'images/canting.jpg',    'title'=>'Mencanting',        'desc'=>'Tarik garis malam sebagai perintang'],
+              ['img'=>'images/pewarnaan.jpg',    'title'=>'Pewarnaan/Celup',   'desc'=>'Pencelupan bertahap untuk kedalaman warna'],
+              ['img'=>'images/detail.jpg',    'title'=>'Colet/Detail',      'desc'=>'Pewarnaan manual pada bagian tertentu'],
+              ['img'=>'images/lorod.jpg',    'title'=>'Pelorodan',         'desc'=>'Melepas malam dan finishing kain'],
+              ['img'=>'images/batikjadi.jpg',     'title'=>'Siap Dipakai',      'desc'=>'Kain batik selesai—siap dijahit/dipakai'],
             ];
           @endphp
 
