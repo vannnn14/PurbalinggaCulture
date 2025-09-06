@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TranslateController;
 use App\Http\Controllers\KulinerController;
 use App\Http\Controllers\beritaController;
+use App\Http\Controllers\KerajinanController;
+use App\Http\Controllers\SeniController;
+use App\Http\Controllers\TradisiController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +56,9 @@ Route::get('/berita', function () {
 Route::get('/berita', [beritaController::class, 'index'])->name('berita');
 
 Route::get('/kuliner/{slug}', [KulinerController::class, 'show'])->name('kuliner.show');
+
+Route::get('/kerajinan/{slug}', [KerajinanController::class, 'show'])->name('kerajinan.show');
+
+Route::get('/seni/{slug}', [SeniController::class, 'show'])->name('seni.show');
+
+Route::get('/tradisi/{slug}', [TradisiController::class, 'show'])->name('tradisi.show');

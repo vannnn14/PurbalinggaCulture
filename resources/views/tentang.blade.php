@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   @vite('resources/css/app.css')
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body class=" text-gray-800 font-sans">
 
   {{-- Navbar --}}
@@ -14,7 +16,7 @@
 
   <!-- Hero Section -->
   <section class="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
-           style="background-image: url('/images/pbg.jpg');">
+    style="background-image: url('/images/pbg.jpg');">
     <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70"></div>
     <div class="relative z-10 text-center text-white px-4" data-aos="fade-up">
       <h1 class="text-5xl font-extrabold mb-4">Tentang Kami</h1>
@@ -28,7 +30,7 @@
   <!-- Siapa Kami -->
   <section class="py-20 px-6 md:px-20 bg-white">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      
+
       <!-- Text -->
       <div data-aos="fade-right">
         <h2 class="text-3xl font-bold text-amber-800 mb-6">Siapa Kami?</h2>
@@ -44,13 +46,11 @@
       </div>
 
       <div class="relative flex justify-center items-center bg-white rounded-2xl shadow-lg h-80" data-aos="fade-left">
-  <img src="/images/patung.png" 
-       alt="Budaya Purbalingga"
-       class="max-h-full max-w-full object-contain p-2">
-  <div class="absolute bottom-4 left-4 bg-amber-700 text-white px-4 py-2 rounded-lg shadow">
-    Sejak 2024
-  </div>
-</div>
+        <img src="/images/patung.png" alt="Budaya Purbalingga" class="max-h-full max-w-full object-contain p-2">
+        <div class="absolute bottom-4 left-4 bg-amber-700 text-white px-4 py-2 rounded-lg shadow">
+          Sejak 2024
+        </div>
+      </div>
 
 
 
@@ -65,7 +65,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-10">
-      
+
       <!-- Visi -->
       <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
         <h3 class="text-2xl font-bold text-amber-700 mb-4">Visi</h3>
@@ -75,8 +75,8 @@
       </div>
 
       <!-- Misi -->
-      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition"
-           data-aos="fade-up" data-aos-delay="150">
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up"
+        data-aos-delay="150">
         <h3 class="text-2xl font-bold text-amber-700 mb-4">Misi</h3>
         <ul class="text-gray-600 space-y-3 list-disc list-inside">
           <li>Mengedukasi generasi muda tentang seni & tradisi.</li>
@@ -92,7 +92,7 @@
   <section class="py-20 px-6 md:px-20 bg-white">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-amber-800 mb-12">Nilai Kami</h2>
-      
+
       <div class="grid md:grid-cols-4 gap-8">
         <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in">
           <div class="text-4xl text-amber-700 mb-3">🎯</div>
@@ -100,22 +100,22 @@
           <p class="text-sm text-gray-600">Konsistensi dan kualitas dalam setiap langkah.</p>
         </div>
 
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
-             data-aos="zoom-in" data-aos-delay="100">
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
+          data-aos-delay="100">
           <div class="text-4xl text-amber-700 mb-3">🔥</div>
           <h3 class="font-semibold text-lg mb-2">Passion</h3>
           <p class="text-sm text-gray-600">Semangat kami adalah energi yang terus hidup.</p>
         </div>
 
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
-             data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
+          data-aos-delay="200">
           <div class="text-4xl text-amber-700 mb-3">🤝</div>
           <h3 class="font-semibold text-lg mb-2">Kolaborasi</h3>
           <p class="text-sm text-gray-600">Bersama masyarakat melestarikan budaya.</p>
         </div>
 
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
-             data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
+          data-aos-delay="300">
           <div class="text-4xl text-amber-700 mb-3">🌍</div>
           <h3 class="font-semibold text-lg mb-2">Inovasi</h3>
           <p class="text-sm text-gray-600">Menghadirkan solusi kreatif dalam pelestarian budaya.</p>
@@ -130,13 +130,12 @@
       <h2 class="text-3xl font-bold text-amber-800 mb-12">Tim Kami</h2>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        
+
         <!-- Member 1 -->
-        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up">
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
           <div class="relative">
             <img src="/images/irvanbg.png" alt="Irvan"
-                 class="w-full h-80 object-cover group-hover:scale-105 transition">
+              class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Irvan</h3>
@@ -146,11 +145,11 @@
         </div>
 
         <!-- Member 2 -->
-        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="150">
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="fade-up"
+          data-aos-delay="150">
           <div class="relative">
             <img src="/images/member2.jpg" alt="Intan"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+              class="w-full h-60 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Intan</h3>
@@ -160,11 +159,10 @@
         </div>
 
         <!-- Member 3 -->
-        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="300">
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="fade-up"
+          data-aos-delay="300">
           <div class="relative">
-            <img src="/images/sony1.png" alt="Sony"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/sony1.png" alt="Sony" class="w-full h-60 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Sony</h3>
@@ -188,22 +186,23 @@
         warisan budaya agar tetap hidup di hati generasi mendatang.
       </p>
       <a href="/kontak"
-         class="px-8 py-3 bg-white text-amber-700 rounded-full font-semibold shadow hover:bg-gray-100 transition"
-         data-aos="zoom-in" data-aos-delay="200">
+        class="px-8 py-3 bg-white text-amber-700 rounded-full font-semibold shadow hover:bg-gray-100 transition"
+        data-aos="zoom-in" data-aos-delay="200">
         Hubungi Kami
       </a>
     </div>
   </section>
 
-  
+
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
   </script>
 
-{{-- Footer --}}
-    @include('footer')
+  {{-- Footer --}}
+  @include('footer')
 
 </body>
+
 </html>

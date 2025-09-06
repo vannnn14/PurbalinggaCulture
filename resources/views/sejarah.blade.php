@@ -183,7 +183,7 @@
     <hr class="border-0 h-px bg-gray-300">
 
     {{-- TOKOH PURBALINGGA (header + 4 highlight) --}}
-    <section id="tokoh" class="py-12 bg-white" role="region" aria-labelledby="judul-tokoh">
+    <section id="tokoh" class="py-12 bg-[#FFECD1]/50 mb-5" role="region" aria-labelledby="judul-tokoh">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between">
           <h2 id="judul-tokoh" class="text-2xl md:text-[34px] leading-none font-semibold text-[#5a371c]">
@@ -195,7 +195,7 @@
         <div class="mt-4 h-px bg-[#8b5e34]/60"></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center ">
         <p class="text-gray-600 mt-5 font-bold">
           Beberapa tokoh dari Purbalingga yang memberi warna bagi sejarah dan budaya.
         </p>
