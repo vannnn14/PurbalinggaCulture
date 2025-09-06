@@ -135,8 +135,8 @@
         <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
              data-aos="fade-up">
           <div class="relative">
-            <img src="/images/member1.jpg" alt="Irvan"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/irvanbg.png" alt="Irvan"
+                 class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Irvan</h3>
