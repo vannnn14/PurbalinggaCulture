@@ -34,7 +34,7 @@
 
         <figure class="flex justify-center items-start">
           <div class="w-full max-w-xl aspect-[4/3] bg-gray-200/40 rounded-xl overflow-hidden shadow">
-            <img src="/images/gambarsejarah.png" alt="Ilustrasi sejarah Purbalingga"
+            <img src="/images/sejarah.jpg" alt="Ilustrasi sejarah Purbalingga"
                  class="w-full h-full object-cover" loading="lazy" decoding="async">
           </div>
           <figcaption class="sr-only">Ilustrasi pemindahan pusat pemerintahan ke Purbalingga.</figcaption>
@@ -154,7 +154,7 @@
           {{-- Mayjend Soengkono --}}
           <article class="relative rounded-xl overflow-hidden shadow-lg group">
             <a href="{{ route('berita', ['tokoh' => 'soengkono']) }}">
-              <img src="/images/mayjensoengkono.png" alt="Mayjen Soengkono"
+              <img src="/images/soengkono1.jpg" alt="Mayjen Soengkono"
               class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"></img>
               <h3 class="text-lg font-bold  text-black">Mayjen Soengkono</h3>
               <p class="text-sm text-black mb-2">Panglima TNI, Pahlawan Nasional</p>

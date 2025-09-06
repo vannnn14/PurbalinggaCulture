@@ -53,7 +53,7 @@ class BeritaController extends Controller
                 'nama' => 'Mayjen Soengkono',
                 'gelar' => 'Panglima TNI dan Pahlawan Nasional',
                 'kategori' => 'Pahlawan Nasional',
-                'gambar' => '/images/mayjensoengkono.png',
+                'gambar' => '/images/soengkono1.jpg',
                 'lahir' => '15 Agustus 1915, Purbalingga',
                 'wafat' => '10 November 1979, Jakarta',
                 'dikenal' => 'Panglima TNI, Pahlawan Nasional',
@@ -157,7 +157,7 @@ class BeritaController extends Controller
                         'konten' => 'Hingga kini, Indro tetap aktif di dunia hiburan dan menjadi salah satu ikon komedi Indonesia yang paling dihormati dan dikagumi. Karya-karyanya bersama Warkop tetap dikenang sebagai bagian penting dari sejarah hiburan Indonesia.'
                     ]
                 ]
-            ]
+            ] 
         ];
         
         // Jika parameter tidak valid, default ke soedirman
