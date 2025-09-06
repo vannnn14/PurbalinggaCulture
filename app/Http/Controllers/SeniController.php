@@ -8,16 +8,16 @@ class SeniController extends Controller
 {
     private array $data = [
         'tari-lengger' => [
-            'title'    => 'Tari Lengger',
+            'title'    => 'Tari Gidro',
             'slug'     => 'tari-lengger',
             'category' => 'Seni',
             'image'    => 'images/tarilengger.jpg',
             'body'     => <<<HTML
-                <p><strong>Tari Lengger</strong> adalah seni tari rakyat khas Banyumasan yang ditarikan dengan gerak lincah, irama dinamis, serta ekspresi riang gembira. Pertunjukan Lengger sering hadir pada pesta rakyat, hajatan, hingga panggung festival budaya.</p>
-                <p>Lengger diiringi gamelan dengan kendang sebagai pengatur tempo. Saweran penonton menjadi bagian dari interaksi penari dan masyarakat. Di balik keriangan, Lengger menyimpan filosofi keseimbangan hidup dan penghormatan pada bumi.</p>
-                <p>Saat ini banyak sanggar melatih generasi muda untuk menjaga keberlangsungan Tari Lengger, baik sebagai hiburan maupun media edukasi.</p>
-                <p>Selain hiburan, Tari Lengger juga berfungsi sebagai sarana sosial. Di desa-desa, pertunjukan Lengger kerap menjadi ajang silaturahmi warga, mempererat ikatan sosial, dan memperkuat rasa kebersamaan. Tradisi ini menjadi simbol kebudayaan Banyumasan yang terus berkembang seiring zaman.</p>
-                <p>Pemerintah daerah maupun komunitas seni kini gencar mengangkat Tari Lengger dalam festival dan promosi pariwisata. Upaya ini diharapkan dapat memperkenalkan tarian rakyat kepada generasi muda sekaligus wisatawan dari berbagai daerah, sehingga Tari Lengger tetap lestari dan dihargai sebagai warisan budaya.</p>
+                <p><strong>Tari Gidro</strong><p>Kabupaten Purbalingga (Jateng) meluncurkan tarian terbarunya berjudul Tari "Gidro". Di Purbalingga, tari lengger Banyumasan yang diciptakan oleh pemilik grup calung Wisanggeni, Susiati, di pentaskan pada acara lepas sambut kapolres Purbalingga di Pendopo Dipokusumo, Selasa (7/2). Tarian ini juga sempat dipertontonkan secara kolosal pada peringatan hari jadi Kabupaten Pemalang, Kamis (26/1) silam</p>
+                <p>"Gidro dalam bahasa lokal banyumasan berarti berjingkrak-jingkrak. Lebih cenderung diartikan gerak meloncat-loncat untuk mengungkapkan rasa senang," kata Susiati usai pementasan di Pendopo Dipokusumo.</p>
+                <p>Tari Gidro, lanjutnya, merupakan sebuah tari yang berisi ungkapan kegembiraan sekelompok masyarakat Purbalingga. Meski gerakannya dinamis sebagaimana jenis tarian lenggeran lainnya, namun gerak para penari yang di tunjukan, melambangkan rasa syukur atas rizki yang melimpah sehingga dapat mencukupi kebutuhannya sehari-hari</p>
+                <p>"Dengan tarian ini, masyarakat Purbalingga berharap hidupnya senantiasa dalam kemakmuran sekaligus selaludamai hatinya," jelasnya.
+                    Dan Tari Gidro merupakan tarian asli asal Purbalingga yang memiliki makna indah, yaitu masyarakat Purbalingga yang berharap hidupnya selalu dikelilingi oleh kemakmuran.</p>
             HTML,
         ],
         'kuda-lumping' => [

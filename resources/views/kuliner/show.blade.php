@@ -6,10 +6,10 @@
   <title>{{ $post['title'] }} — Purbalingga Culture</title>
   @vite('resources/css/app.css')
 </head>
-<body class="antialiased text-slate-800">
+<body class="antialiased bg-[#FAF4E1] text-slate-800">
   @include('navbar')
 
-  <main class="bg-[#FAF4E1] mb-5">
+  <main class="mb-5">
     <div class="max-w-3xl mx-auto px-4 lg:px-6 py-10">
       <p class="text-[11px] uppercase tracking-wide text-[#8B5E3C]">{{ $post['category'] }}</p>
       <h1 class="text-2xl md:text-3xl font-bold text-[#5C3A21]">{{ $post['title'] }}</h1>
@@ -32,7 +32,7 @@
         <div class="grid sm:grid-cols-3 gap-5">
           @foreach ($related as $r)
             <a href="{{ route('kuliner.show', $r['slug']) }}"
-               class="group rounded-xl overflow-hidden border border-[#8B5E3C] bg-white hover:shadow-lg transition">
+               class="group rounded-xl overflow-hidden border border-[#8B5E3C] bg-b;acl hover:shadow-lg transition">
               <div class="aspect-[4/3]">
                 <img src="{{ asset($r['image']) }}" alt="{{ $r['title'] }}" class="w-full h-full object-cover group-hover:scale-105 transition">
               </div>

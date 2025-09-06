@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
             'slug'     => 'tempe-mendoan-gurih-tipis-hangat',
             'title'    => 'Tempe Mendoan — Gurih, Tipis, dan Nikmat Disantap Hangat',
             'category' => 'Kuliner Ikonik',
-            'image'    => 'images/mendoan.png',
+            'image'    => 'images/mendoan2.jpg',
             'body'     => <<<'HTML'
 <p><strong>Tempe mendoan</strong> adalah ikon kuliner Banyumas–Purbalingga. Kata “mendo” berarti setengah matang, sehingga teksturnya lembut di bagian dalam dengan tepian sedikit garing. Proses menggorengnya singkat dalam minyak panas agar tempe tidak kering.</p>
 <p>Mendoan biasanya dinikmati selagi hangat, ditemani cabai rawit hijau atau sambal kecap. Kelezatan mendoan justru terletak pada kesederhanaan adonannya: tepung berbumbu bawang, daun bawang, ketumbar, dan sedikit garam.</p>

@@ -86,7 +86,7 @@
         <a href="{{ route('kuliner.show', 'tempe-mendoan-gurih-tipis-hangat') }}"
            class="block rounded-xl overflow-hidden border border-[#8B5E3C]/60 sm:border-[#8B5E3C] shadow hover:shadow-md transition">
           <div class="aspect-[16/9]">
-            <img src="{{ asset('images/mendoan.png') }}" alt="Tempe Mendoan"
+            <img src="{{ asset('images/mendoan2.jpg') }}" alt="Tempe Mendoan"
                  class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300">
           </div>
           <div class="p-4 sm:p-5">
