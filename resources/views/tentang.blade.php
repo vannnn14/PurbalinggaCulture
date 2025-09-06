@@ -1,96 +1,210 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tentang Kami - PurbaCulture</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - PurbaCulture</title>
+  @vite('resources/css/app.css')
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<body class="bg-[var(--brand-cream)] text-[var(--brand-dark)]">
+  {{-- Navbar --}}
+  @include('navbar')
 
-    <!-- Navbar -->
-    @include('navbar')
+  <!-- Hero Section -->
+  <section class="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
+           style="background-image: url('/images/pbg.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70"></div>
+    <div class="relative z-10 text-center text-white px-4" data-aos="fade-up">
+      <h1 class="text-5xl font-extrabold mb-4">Tentang Kami</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Menjaga, mendokumentasikan, dan memperkenalkan budaya Purbalingga
+        dengan cara yang modern dan menginspirasi.
+      </p>
+    </div>
+  </section>
 
-    <!-- High Values Section -->
-    <section class="bg-[var(--brand-dark)] text-white py-12 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-4xl font-extrabold mb-4">HIGH VALUES</h1>
-            <p class="text-lg text-[rgba(255,255,255,0.9)] mb-12">
-                Kesuksesan kami bukan hanya berasal dari kualitas pekerjaan kami. Ini tentang sikap kami, pendekatan kami, dan bagaimana kami memperlakukan komunitas kami.
-            </p>
+  <!-- Siapa Kami -->
+  <section class="py-20 px-6 md:px-20 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Text -->
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold text-amber-800 mb-6">Siapa Kami?</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <strong>PurbaCulture</strong> adalah platform digital yang berdedikasi
+          untuk menjaga dan mempromosikan kekayaan budaya Purbalingga. Kami percaya
+          bahwa budaya adalah identitas yang harus terus hidup di tengah arus modernisasi.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Dengan memanfaatkan teknologi, kami menghadirkan cara baru untuk menghubungkan
+          masyarakat, generasi muda, dan dunia dengan seni, tradisi, dan nilai luhur Purbalingga.
+        </p>
+      </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="text-[var(--accent)] text-4xl mb-4">01</div>
-                    <p class="text-xl font-semibold">Focus</p>
-                    <p class="text-lg">Kami berkomitmen 100% untuk membuat semua proyek kami menjadi yang terbaik, tidak peduli seberapa besar tantangannya.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-[var(--accent)] text-4xl mb-4">02</div>
-                    <p class="text-xl font-semibold">Passion</p>
-                    <p class="text-lg">Keinginan kami untuk menghasilkan karya terbaik menjadi bahan bakar yang memungkinkan kami menangani setiap proyek dengan semangat dan energi baru.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-[var(--accent)] text-4xl mb-4">03</div>
-                    <p class="text-xl font-semibold">Empathy</p>
-                    <p class="text-lg">Kami mendengarkan dengan seksama untuk memahami bisnis dan kebutuhan Anda sambil berbagi pengetahuan dan pengalaman kami.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-[var(--accent)] text-4xl mb-4">04</div>
-                    <p class="text-xl font-semibold">Teamwork</p>
-                    <p class="text-lg">Kami bersatu dengan Anda untuk mencapai hasil terbaik dari proyek Anda – anggap kami sebagai anggota tambahan dalam tim Anda dengan keterampilan yang Anda butuhkan.</p>
-                </div>
-            </div>
+      <div class="relative flex justify-center items-center bg-white rounded-2xl shadow-lg h-80" data-aos="fade-left">
+  <img src="/images/patung.png" 
+       alt="Budaya Purbalingga"
+       class="max-h-full max-w-full object-contain p-2">
+  <div class="absolute bottom-4 left-4 bg-amber-700 text-white px-4 py-2 rounded-lg shadow">
+    Sejak 2024
+  </div>
+</div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section class="py-20 px-6 md:px-20 bg-amber-50">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold text-amber-800">Visi & Misi</h2>
+      <p class="text-gray-600 mt-4">Arah dan tujuan kami dalam menjaga warisan budaya</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      
+      <!-- Visi -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-amber-700 mb-4">Visi</h3>
+        <p class="text-gray-600">
+          Menjadi pusat digital budaya Purbalingga yang inspiratif, inklusif, dan diakui secara global.
+        </p>
+      </div>
+
+      <!-- Misi -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition"
+           data-aos="fade-up" data-aos-delay="150">
+        <h3 class="text-2xl font-bold text-amber-700 mb-4">Misi</h3>
+        <ul class="text-gray-600 space-y-3 list-disc list-inside">
+          <li>Mengedukasi generasi muda tentang seni & tradisi.</li>
+          <li>Menggunakan teknologi untuk melestarikan budaya.</li>
+          <li>Membuka akses budaya Purbalingga ke dunia luas.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Nilai Kami -->
+  <section class="py-20 px-6 md:px-20 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-amber-800 mb-12">Nilai Kami</h2>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in">
+          <div class="text-4xl text-amber-700 mb-3">🎯</div>
+          <h3 class="font-semibold text-lg mb-2">Fokus</h3>
+          <p class="text-sm text-gray-600">Konsistensi dan kualitas dalam setiap langkah.</p>
         </div>
-    </section>
 
-    <!-- Meet The Team Section -->
-    <section class="py-12 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-extrabold mb-6">KENALI TIM KAMI</h2>
-            <p class="text-lg text-[rgba(0,0,0,0.7)] mb-12">
-                Kenali individu-individu yang bersemangat di balik misi kami.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                <!-- Member 1 -->
-                <div class="text-center">
-                    <div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-6">
-                        <img src="{{ asset('images/member1.jpg') }}" alt="Phil Shackleton" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Phil Shackleton</h3>
-                    <p class="text-lg text-[var(--green)] mb-4">Direktur Digital</p>
-                    <p class="text-lg">Phil adalah salah satu pendiri PurbaCulture dan menjadi lebih teknis seiring berjalannya waktu. Seorang lulusan desain grafis yang memimpin pengembangan solusi digital kami. Ahli dalam aksesibilitas web dan desain berbasis standar.</p>
-                </div>
-
-                <!-- Member 2 -->
-                <div class="text-center">
-                    <div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-6">
-                        <img src="{{ asset('images/member2.jpg') }}" alt="Mike Danford" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Mike Danford</h3>
-                    <p class="text-lg text-[var(--green)] mb-4">Direktur Kreatif</p>
-                    <p class="text-lg">Mike mengawasi seluruh output kreatif PurbaCulture dan bekerja sama dengan klien kami untuk memastikan kebutuhan mereka terpenuhi dan desain yang kami berikan berkualitas tinggi.</p>
-                </div>
-
-                <!-- Member 3 -->
-                <div class="text-center">
-                    <div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-6">
-                        <img src="{{ asset('images/member3.jpg') }}" alt="Aaron Thomas" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Aaron Thomas</h3>
-                    <p class="text-lg text-[var(--green)] mb-4">Peneliti Konten</p>
-                    <p class="text-lg">Aaron bertanggung jawab untuk meneliti dan melestarikan cerita lokal agar konten kami tetap relevan dengan budaya dan audiens kami.</p>
-                </div>
-            </div>
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
+             data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-4xl text-amber-700 mb-3">🔥</div>
+          <h3 class="font-semibold text-lg mb-2">Passion</h3>
+          <p class="text-sm text-gray-600">Semangat kami adalah energi yang terus hidup.</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    @include('footer')
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
+             data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-4xl text-amber-700 mb-3">🤝</div>
+          <h3 class="font-semibold text-lg mb-2">Kolaborasi</h3>
+          <p class="text-sm text-gray-600">Bersama masyarakat melestarikan budaya.</p>
+        </div>
+
+        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition"
+             data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-4xl text-amber-700 mb-3">🌍</div>
+          <h3 class="font-semibold text-lg mb-2">Inovasi</h3>
+          <p class="text-sm text-gray-600">Menghadirkan solusi kreatif dalam pelestarian budaya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tim Kami -->
+  <section class="py-20 px-6 md:px-20 bg-amber-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-amber-800 mb-12">Tim Kami</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        
+        <!-- Member 1 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+             data-aos="fade-up">
+          <div class="relative">
+            <img src="/images/member1.jpg" alt="Irvan"
+                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg">Irvan</h3>
+            <p class="text-amber-600 text-sm mb-3">Developer</p>
+            <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+             data-aos="fade-up" data-aos-delay="150">
+          <div class="relative">
+            <img src="/images/member2.jpg" alt="Intan"
+                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg">Intan</h3>
+            <p class="text-amber-600 text-sm mb-3">UI/UX Designer</p>
+            <p class="text-gray-600 text-sm">Merancang tampilan modern dan ramah pengguna.</p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+             data-aos="fade-up" data-aos-delay="300">
+          <div class="relative">
+            <img src="/images/member3.jpg" alt="Sony"
+                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg">Sony</h3>
+            <p class="text-amber-600 text-sm mb-3">Content Writer</p>
+            <p class="text-gray-600 text-sm">Mengelola artikel, narasi, dan dokumentasi budaya.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-20 bg-amber-700 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+        Mari Bersama Melestarikan Budaya Purbalingga
+      </h2>
+      <p class="max-w-2xl mx-auto text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+        Dengan teknologi, kolaborasi, dan semangat bersama, kita bisa menjaga
+        warisan budaya agar tetap hidup di hati generasi mendatang.
+      </p>
+      <a href="/kontak"
+         class="px-8 py-3 bg-white text-amber-700 rounded-full font-semibold shadow hover:bg-gray-100 transition"
+         data-aos="zoom-in" data-aos-delay="200">
+        Hubungi Kami
+      </a>
+    </div>
+  </section>
+
+  
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  {{-- Footer --}}
+  @include('footer')
 
 </body>
-
 </html>
