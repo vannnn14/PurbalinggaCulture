@@ -11,7 +11,7 @@
   {{-- AOS (opsional) --}}
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-[#fdf6ec] text-gray-800">
    <!-- Navbar -->
     @include('navbar')
   <!-- Hero Section -->
