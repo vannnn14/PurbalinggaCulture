@@ -6,135 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purba Culture</title>
     @vite('resources/css/app.css')
-    <style>
-        .active {
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    .hero-pattern {
+      background-color: #fef7eb;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c59867' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+            .active {
             background-color: #e6b68c;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c59867' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             color: white;
         }
-    </style>
+  </style>
 </head>
 
-
-<body class="bg-[#f6efe3]">
+<body class="hero-pattern">
     {{-- Navbar --}}
     @include('navbar')
 
+    
     <div class="max-w-5xl mx-auto p-6">
-        <h2 class="text-2xl font-bold text-center mb-2">Translator Bahasa Ngapak</h2>
-        <p class="text-center text-gray-700 mb-6">
-            Terjemahkan kata/kalimat dari Bahasa Ngapak ke Bahasa Indonesia (dummy version).
-        </p>
+    <h2 class="text-3xl font-bold text-center mb-2 text-[#8B4513]">🪔 Translator Bahasa Ngapak 🪔</h2>
+    <p class="text-center text-gray-600 mb-8 italic">
+        Terjemahkan kata/kalimat dari Bahasa Ngapak ke Bahasa Indonesia dengan mudah.
+    </p>
 
-        {{-- Pilih mode bahasa --}}
-        <div class="flex justify-center mb-4">
-            <div class="inline-flex border rounded-lg overflow-hidden">
-                <button id="btnNgapak" class="px-4 py-2 font-medium active">Ngapak → Indonesia</button>
-                <button id="btnIndo" class="px-4 py-2 font-medium">Indonesia → Ngapak</button>
-            </div>
-        </div>
-
-        {{-- Inputan --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <div>
-                <label id="labelLeft" class="block mb-2 font-medium">Ngapak</label>
-                <textarea id="inputLeft" class="w-full p-3 border rounded-lg h-32" placeholder="Tulis teks di sini..."></textarea>
-            </div>
-            <div>
-                <label id="labelRight" class="block mb-2 font-medium">Indonesia</label>
-                <textarea id="inputRight" class="w-full p-3 border rounded-lg h-32" placeholder="Hasil terjemahan..." readonly></textarea>
-            </div>
-        </div>
-
-        {{-- Aksi tambahan --}}
-        <div class="flex justify-center gap-6 text-gray-700 mb-6">
-            <button onclick="speakText()" class="flex items-center gap-1 hover:text-black">
-                🔊 Baca
+    {{-- Pilih mode bahasa --}}
+    <div class="flex justify-center mb-6">
+        <div class="inline-flex bg-white rounded-full shadow-md overflow-hidden border">
+            <button id="btnNgapak" 
+                class="px-5 py-2 font-medium active cursor-pointer transition-colors duration-300 hover:bg-[#e6b68c] hover:text-white">
+                Ngapak → Indonesia
             </button>
-            <button onclick="copyText()" class="flex items-center gap-1 hover:text-black">
-                📋 Copy
+            <button id="btnIndo" 
+                class="px-5 py-2 font-medium cursor-pointer transition-colors duration-300 hover:bg-[#e6b68c] hover:text-white">
+                Indonesia → Ngapak
             </button>
-            <button class="flex items-center gap-1 hover:text-black">
-                ❤ Simpan
-            </button>
-        </div>
-
-        {{-- Kata populer --}}
-        <div class="border rounded-lg p-4 bg-white">
-            <h3 class="font-semibold mb-2">Kata Populer :</h3>
-            <ul class="grid grid-cols-2 gap-2 text-gray-700">
-                <li>Kowe = Kamu</li>
-                <li>Nggo = Untuk</li>
-                <li>Ndang = Ayo cepat</li>
-                <li>Mangan = Makan</li>
-                <li>Inyong = Aku</li>
-            </ul>
         </div>
     </div>
 
-    <!-- <script>
-        let mode = "ngapak"; // default
-        const kamus = {
-            "kowe": "kamu",
-            "nggo": "untuk",
-            "ndang": "ayo cepat",
-            "mangan": "makan",
-            "inyong": "aku"
-        };
+    {{-- Inputan --}}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+            <label id="labelLeft" class="block mb-2 font-semibold text-[#6B4226]">Ngapak</label>
+            <textarea id="inputLeft" 
+                class="w-full p-3 border rounded-lg h-36 focus:ring-2 focus:ring-[#e6b68c] focus:outline-none" 
+                placeholder="Tulis teks di sini..."></textarea>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+            <label id="labelRight" class="block mb-2 font-semibold text-[#6B4226]">Indonesia</label>
+            <textarea id="inputRight" 
+                class="w-full p-3 border rounded-lg h-36 bg-gray-50" 
+                placeholder="Hasil terjemahan..." readonly></textarea>
+        </div>
+    </div>
 
-        function setMode(newMode) {
-            mode = newMode;
-            document.getElementById("btnNgapak").classList.toggle("active", mode === "ngapak");
-            document.getElementById("btnIndo").classList.toggle("active", mode === "indo");
-            document.getElementById("labelLeft").innerText = mode === "ngapak" ? "Ngapak" : "Indonesia";
-            document.getElementById("labelRight").innerText = mode === "ngapak" ? "Indonesia" : "Ngapak";
-            translateText(); // langsung update hasil setelah ganti mode
-        }
+    {{-- Kata populer --}}
+    <div class="border rounded-xl p-6 bg-white shadow-sm mb-10">
+        <h3 class="font-semibold mb-4 text-lg text-[#8B4513]">🔥 Kata Populer :</h3>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-700">
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Kowe</b> = Kamu</li>
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Inyong</b> = Aku</li>
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Lagi</b> = Sedang</li>
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Mangan</b> = Makan</li>
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Turu</b> = Tidur</li>
+            <li class="p-2 bg-[#fef7eb] rounded-lg shadow-sm">👉 <b>Kencot</b> = Laper</li>
+        </ul>
+    </div>
+</div>
 
-        document.getElementById("btnNgapak").addEventListener("click", () => setMode("ngapak"));
-        document.getElementById("btnIndo").addEventListener("click", () => setMode("indo"));
-
-        // realtime translate saat user mengetik
-        document.getElementById("inputLeft").addEventListener("input", translateText);
-
-        function translateText() {
-            let input = document.getElementById("inputLeft").value.toLowerCase().trim();
-            let output = "";
-
-            if (!input) {
-                document.getElementById("inputRight").value = "";
-                return;
-            }
-
-            if (mode === "ngapak") {
-                output = input.split(" ").map(word => kamus[word] || word).join(" ");
-            } else {
-                output = input.split(" ").map(word => {
-                    let found = Object.keys(kamus).find(key => kamus[key] === word);
-                    return found || word;
-                }).join(" ");
-            }
-
-            document.getElementById("inputRight").value = output;
-        }
-
-        function speakText() {
-            let text = document.getElementById("inputRight").value;
-            if (text) {
-                let utter = new SpeechSynthesisUtterance(text);
-                speechSynthesis.speak(utter);
-            }
-        }
-
-        function copyText() {
-            let text = document.getElementById("inputRight").value;
-            if (text) {
-                navigator.clipboard.writeText(text);
-                alert("Teks berhasil dicopy!");
-            }
-        }
-    </script> -->
 
 <script>
+
     let mode = "ngapak"; // default
 
     function setMode(newMode) {
