@@ -135,10 +135,6 @@
           Festival budaya menampilkan gamelan, tari tradisional, serta pameran batik khas daerah
           untuk melestarikan warisan leluhur.
         </p>
-        <a href="/agenda"
-          class="inline-block mt-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-md shadow-md">
-          Lihat Agenda Lainnya
-        </a>
       </div>
       <div class="flex justify-center">
         <img src="/images/slamet.png" alt="Poster Festival"
