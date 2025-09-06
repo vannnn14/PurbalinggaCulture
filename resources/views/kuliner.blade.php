@@ -15,21 +15,39 @@
   <section class="bg-[#FAF4E1] border-b relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-5 lg:px-6 py-8 sm:py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
       
-      {{-- Gambar (mobile di atas, desktop di kanan) --}}
-      <div class="order-1 lg:order-2 w-full relative">
-        <div class="aspect-[16/11] w-full overflow-hidden rounded-xl border sm:border-2 border-[#8B5E3C]/80 shadow-lg">
-          <img
-            src="{{ asset('images/sroto.jpg') }}"
-            alt="Sroto Purbalingga"
-            class="w-full h-full object-cover"
-            loading="lazy" decoding="async" />
-        </div>
-        <div class="flex items-center justify-center gap-1 mt-3">
-          <span class="h-1.5 w-1.5 rounded-full bg-slate-300"></span>
-          <span class="h-1.5 w-6 rounded-full bg-[#8B5E3C]"></span>
-          <span class="h-1.5 w-1.5 rounded-full bg-slate-300"></span>
-        </div>
-      </div>
+      {{-- Gambar carousel (mobile di atas, desktop di kanan) --}}
+<div class="order-1 lg:order-2 w-full relative" 
+     x-data="{ active: 0, images: [
+        '{{ asset('images/soto2.jpg') }}',
+        '{{ asset('images/sate1.jpg') }}',
+        '{{ asset('images/mendoan2.jpg') }}'
+      ] }" 
+     x-init="setInterval(() => active = (active + 1) % images.length, 4000)">
+  
+  {{-- Container gambar --}}
+  <div class="aspect-[16/11] w-full overflow-hidden rounded-xl border sm:border-2 border-[#8B5E3C]/80 shadow-lg relative">
+    <template x-for="(img, index) in images" :key="index">
+      <img 
+        :src="img" 
+        alt="Foto Sroto Purbalingga"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+        :class="active === index ? 'opacity-100' : 'opacity-0'" 
+        loading="lazy" decoding="async">
+    </template>
+  </div>
+
+  {{-- Indicator dots --}}
+  <div class="flex items-center justify-center gap-1 mt-3">
+    <template x-for="(img, index) in images" :key="index">
+      <button 
+        @click="active = index"
+        class="h-1.5 rounded-full transition-all"
+        :class="active === index ? 'w-6 bg-[#8B5E3C]' : 'w-1.5 bg-slate-300'">
+      </button>
+    </template>
+  </div>
+</div>
+
 
       {{-- Teks --}}
       <div class="order-2 lg:order-1 relative">

@@ -71,14 +71,17 @@
 
         <figure class="flex justify-center items-start">
           <div class="w-full max-w-xl aspect-[4/3] bg-gray-200/40 rounded-xl overflow-hidden shadow">
+            <img src="/images/sejarah.jpg" alt="Ilustrasi sejarah Purbalingga"
+                 class="w-full h-full object-cover" loading="lazy" decoding="async">
             <img
-              src="/images/gambarsejarah.png"
+              src="/images/sejarah.jpg"
               alt="Ilustrasi sejarah Purbalingga, pemindahan pusat pemerintahan ke Purbalingga"
               class="w-full h-full object-cover"
               loading="eager"
               fetchpriority="high"
               decoding="async"
               width="1024" height="768">
+
           </div>
           <figcaption class="sr-only">Ilustrasi pemindahan pusat pemerintahan ke Purbalingga.</figcaption>
         </figure>
@@ -186,17 +189,8 @@
           <h2 id="judul-tokoh" class="text-2xl md:text-[34px] leading-none font-semibold text-[#5a371c]">
             Tokoh Purbalingga
           </h2>
-          {{-- Tombol “Lihat Selengkapnya” bisa diaktifkan jika rute sudah tersedia --}}
-          {{--
-          <a href="/tokoh"
-             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#8b5e34]
-                    text-[#6b3f1f] hover:bg-[#8b5e34]/10 transition">
-            <span class="text-[15px]">Lihat Selengkapnya</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
-          --}}
+ 
+          
         </div>
         <div class="mt-4 h-px bg-[#8b5e34]/60"></div>
       </div>
@@ -209,26 +203,26 @@
         {{-- Grid tokoh (4 highlight) --}}
         <ul role="list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          {{-- Jenderal Soedirman --}}
+          
+          {{-- Jendral Soedirman --}}
           <li>
             <article class="relative rounded-xl overflow-hidden shadow-lg group">
-              <a href="{{ route('berita', ['tokoh' => 'soedirman']) }}" class="block">
-                <img src="/images/soedirman.jpeg" alt="Jenderal Soedirman"
+                 <a href="{{ route('berita', ['tokoh' => 'soedirman']) }}">
+                <img src="/images/soedirman.jpeg" alt="Jendral Soedirman"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
                      loading="lazy" decoding="async" width="640" height="384" />
                 <div class="p-3 text-left">
-                  <h3 class="text-lg font-bold text-black">Jenderal Soedirman</h3>
+                  <h3 class="text-lg font-bold text-black">Jendral Soedirman</h3>
                   <p class="text-sm text-black/80 mb-2">Panglima TNI, Pahlawan Nasional</p>
                 </div>
               </a>
             </article>
           </li>
-
           {{-- Mayjen Soengkono --}}
           <li>
             <article class="relative rounded-xl overflow-hidden shadow-lg group">
               <a href="{{ route('berita', ['tokoh' => 'soengkono']) }}" class="block">
-                <img src="/images/mayjensoengkono.png" alt="Mayjen Soengkono"
+                <img src="/images/soengkono1.jpg" alt="Mayjen Soengkono"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
                      loading="lazy" decoding="async" width="640" height="384" />
                 <div class="p-3 text-left">

@@ -163,7 +163,7 @@
         <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
              data-aos="fade-up" data-aos-delay="300">
           <div class="relative">
-            <img src="/images/member3.jpg" alt="Sony"
+            <img src="/images/sony1.png" alt="Sony"
                  class="w-full h-60 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
