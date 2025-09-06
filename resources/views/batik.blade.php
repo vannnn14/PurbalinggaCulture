@@ -6,6 +6,32 @@
   <title>Batik — Purbalingga Culture</title>
   @vite('resources/css/app.css')
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    /* Animasi Slide Vertikal */
+    .slide-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .slide-in-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Animasi Slide Horizontal */
+    .slide-in-horizontal {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .slide-in-horizontal-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
 </head>
 
 <body class="antialiased text-gray-800 bg-[#ffeccd]">
@@ -16,7 +42,6 @@
   <section
     x-data="{ isHover:false }"
     class="relative bg-gradient-to-b from-[#ffeccd] to-[#faf4e1] min-h-[85vh] flex flex-col justify-center items-center py-20 px-6 overflow-hidden">
-
     {{-- Ornamen --}}
     <img src="{{ asset('images/bgleft.png') }}" alt="" aria-hidden="true"
          class="absolute top-0 left-0 w-48 sm:w-60 opacity-80 pointer-events-none"/>
@@ -49,57 +74,54 @@
   </section>
 
   {{-- Separator --}}
-  <!-- <div class="h-2 bg-[#09cd88]"></div> -->
 
   {{-- TEKNIK BATIK --}}
-<section class="relative bg-[#ffeccd] py-20">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    {{-- Gambar kolase --}}
-    <div class="grid grid-cols-2 gap-5">
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
-        <img src="{{ asset('images/tulis.jpg') }}" alt="Proses Batik Tulis"
-             class="w-full h-48 sm:h-64 object-cover" loading="lazy">
+  <section class="relative bg-[#ffeccd] py-20">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      {{-- Gambar kolase --}}
+      <div class="grid grid-cols-2 gap-5">
+        <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
+          <img src="{{ asset('images/tulis.jpg') }}" alt="Proses Batik Tulis"
+               class="w-full h-48 sm:h-64 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
+          <img src="{{ asset('images/cap.jpg') }}" alt="Proses Batik Cap"
+               class="w-full h-48 sm:h-64 object-cover" loading="lazy">
+        </div>
+        <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
+          <img src="{{ asset('images/printing.jpg') }}" alt="Batik Printing"
+               class="w-full h-56 sm:h-72 object-cover" loading="lazy">
+        </div>
       </div>
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
-        <img src="{{ asset('images/cap.jpg') }}" alt="Proses Batik Cap"
-             class="w-full h-48 sm:h-64 object-cover" loading="lazy">
-      </div>
-      <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition">
-        <img src="{{ asset('images/printing.jpg') }}" alt="Batik Printing"
-             class="w-full h-56 sm:h-72 object-cover" loading="lazy">
+
+      {{-- Penjelasan --}}
+      <div class="relative text-gray-800 slide-in" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-6 border-l-4 border-[#09cd88] pl-3">Teknik Membuat Batik</h2>
+        <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+          Setiap teknik menghadirkan karakter motif, kedalaman warna, serta lama proses yang berbeda. 
+          Inilah tiga teknik utama dalam pembuatan batik.
+        </p>
+
+        <div class="space-y-6">
+          <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Tulis</h3>
+            <p class="text-sm mt-1">Menggunakan canting untuk menggambar malam langsung di kain. Detail halus, pengerjaan lama, tiap lembar unik.</p>
+          </div>
+          <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Cap</h3>
+            <p class="text-sm mt-1">Menggunakan cap tembaga bermotif. Proses cepat dan pola seragam, tapi pewarnaan tetap memerlukan keahlian.</p>
+          </div>
+          <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Printing</h3>
+            <p class="text-sm mt-1">Motif dicetak dengan mesin/sablon, efisien dan variatif. Walau tidak pakai malam, tetap mengusung estetika batik.</p>
+          </div>
+        </div>
       </div>
     </div>
-
-    {{-- Penjelasan --}}
-    <div class="relative text-gray-800">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-6 border-l-4 border-[#09cd88] pl-3">Teknik Membuat Batik</h2>
-      <p class="text-gray-700 mb-8 text-lg leading-relaxed">
-        Setiap teknik menghadirkan karakter motif, kedalaman warna, serta lama proses yang berbeda. 
-        Inilah tiga teknik utama dalam pembuatan batik.
-      </p>
-
-      <div class="space-y-6">
-        <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Tulis</h3>
-          <p class="text-sm mt-1">Menggunakan canting untuk menggambar malam langsung di kain. Detail halus, pengerjaan lama, tiap lembar unik.</p>
-        </div>
-        <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Cap</h3>
-          <p class="text-sm mt-1">Menggunakan cap tembaga bermotif. Proses cepat dan pola seragam, tapi pewarnaan tetap memerlukan keahlian.</p>
-        </div>
-        <div class="p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-lg text-[#09cd88]">› Batik Printing</h3>
-          <p class="text-sm mt-1">Motif dicetak dengan mesin/sablon, efisien dan variatif. Walau tidak pakai malam, tetap mengusung estetika batik.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   {{-- MOTIF & FILOSOFI --}}
-  <section class="bg-[#faf4e1] py-20">
+  <section class="bg-[#faf4e1] py-20 slide-in-horizontal" data-aos="fade-up">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Motif dan Filosofi</h3>
       <p class="text-gray-600 mt-2 text-lg">Pelajari makna motif batik khas Purbalingga</p>
@@ -137,7 +159,7 @@
   </section>
 
   {{-- PROSES PEMBUATAN --}}
-  <section class="bg-[#ffeccd] py-20">
+  <section class="bg-[#ffeccd] py-20 slide-in-horizontal">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-2xl md:text-3xl font-bold text-gray-900 text-center">Dari kain polos sampai jadi batik</h3>
 
@@ -172,5 +194,33 @@
 
   {{-- Footer --}}
   @include('footer')
+
+  <script>
+    // Intersection Observer API untuk Slide Timble (vertical/horizontal)
+    const options = {
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const slideInElements = document.querySelectorAll('.slide-in');
+    const slideInHorizontalElements = document.querySelectorAll('.slide-in-horizontal');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(entry.target.classList.contains('slide-in') ? 'slide-in-visible' : 'slide-in-horizontal-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    slideInElements.forEach(element => {
+      observer.observe(element);
+    });
+
+    slideInHorizontalElements.forEach(element => {
+      observer.observe(element);
+    });
+  </script>
 </body>
 </html>
