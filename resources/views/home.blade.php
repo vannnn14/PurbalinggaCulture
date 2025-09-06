@@ -147,56 +147,68 @@
     </div>
   </section>
 
-  <!-- Artikel Budaya (Carousel) -->
-  <section class="max-w-7xl mx-auto px-6 py-20" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-center text-amber-900 mb-14">Artikel Budaya</h2>
-    <div class="swiper artikelSwiper">
-      <div class="swiper-wrapper">
-        @foreach ([
-        ['judul'=>'Sejarah Batik Purbalingga','isi'=>'Mengenal batik khas Purbalingga yang unik dan bersejarah.','img'=>'batik.jpg'],
-        ['judul'=>'Tradisi Kuda Lumping','isi'=>'Kesenian rakyat penuh makna spiritual dan kebersamaan.','img'=>'ebeg.jpg'],
-        ['judul'=>'Kuliner Dawet Ayu','isi'=>'Segarnya minuman tradisional khas Purbalingga.','img'=>'dawet.jpg'],
-        ['judul'=>'Seni Tari Lengger','isi'=>'Pesona tari tradisional Lengger yang khas Purbalingga.','img'=>'lengger.jpg'],
-        ['judul'=>'Gotong Royong','isi'=>'Nilai luhur kebersamaan masyarakat Purbalingga.','img'=>'gotong.jpg']
-        ] as $artikel)
-        <div class="swiper-slide">
-          <div
-            class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 h-full flex flex-col">
-            <img src="/images/{{ $artikel['img'] }}" alt="{{ $artikel['judul'] }}" class="w-full h-48 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-              <h3 class="text-lg font-semibold text-amber-800 mb-2">{{ $artikel['judul'] }}</h3>
-              <p class="text-gray-600 text-sm flex-1">{{ $artikel['isi'] }}</p>
-            </div>
+<!-- Artikel Budaya (Carousel) -->
+<section class="max-w-7xl mx-auto px-6 py-20" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-center text-amber-900 mb-14">Artikel Budaya</h2>
+  <div class="swiper artikelSwiper">
+    <div class="swiper-wrapper">
+      @foreach ([
+        [
+          'judul' => 'Mengenal Batik Purbalingga',
+          'isi'   => 'Mengenal batik khas Purbalingga yang unik dan bersejarah.',
+          'img'   => 'batik.jpg',
+          'url'   => url('/batik')
+        ],
+        [
+          'judul' => 'Tradisi Kuda Lumping',
+          'isi'   => 'Kesenian rakyat penuh makna spiritual dan kebersamaan.',
+          'img'   => 'ebeg.jpg',
+          'url'=>route('seni.show','kuda-lumping')],
+        [
+          'judul' => 'Kuliner Tempe Mendoan',
+          'isi'   => 'Tempe mendoan yang gurih, tipis, dan nikmat disantap hangat.',
+          'img'   => 'mendoan1.jpg',
+          'url'=>route('kuliner.show','tempe-mendoan-gurih-tipis-hangat')],
+        [
+          'judul' => 'Seni Tari Lengger',
+          'isi'   => 'Pesona tari tradisional Lengger yang khas Purbalingga.',
+          'img'   => 'lengger.jpg',
+          'url'=>route('seni.show','tari-lengger')],
+        [
+          'judul' => 'Sapu Glagah',
+          'isi'   => 'Nilai luhur kebersamaan masyarakat Purbalingga.',
+          'img'   => 'sapuglagah.png',
+          'url'=>route('kerajinan.show','sapu-glagah')],
+        [
+          'judul' => 'Nyadran',
+          'isi'   => 'Nilai luhur kebersamaan masyarakat Purbalingga.',
+          'img'   => 'nyadran.png',
+          'url'=>route('tradisi.show','nyadran')],
+        [
+          'judul' => 'Sedekah Bumi',
+          'isi'   => 'Nilai luhur kebersamaan masyarakat Purbalingga.',
+          'img'   => 'gotong.jpg',
+          'url'=>route('tradisi.show','sedekah-bumi')],
+      ] as $artikel)
+      <div class="swiper-slide">
+        <a href="{{ $artikel['url'] }}" 
+           class="block bg-white shadow-md rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 h-full flex flex-col">
+          <img src="/images/{{ $artikel['img'] }}" alt="{{ $artikel['judul'] }}" class="w-full h-48 object-cover">
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-lg font-semibold text-amber-800 mb-2">{{ $artikel['judul'] }}</h3>
+            <p class="text-gray-600 text-sm flex-1">{{ $artikel['isi'] }}</p>
+            <span class="mt-4 inline-block text-amber-700 font-semibold hover:underline">Selengkapnya →</span>
           </div>
-        </div>
-        @endforeach
+        </a>
       </div>
-      <div class="swiper-pagination mt-6"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      @endforeach
     </div>
-  </section>
-
-  <!-- Galeri Foto -->
-  <section class="bg-gradient-to-b from-amber-50 to-amber-100 py-20">
-  <h2 class="text-3xl font-bold text-center text-amber-900 mb-14 tracking-wide">
-    Galeri Purbalingga
-  </h2>
-
-  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 px-6">
-    @foreach (['masjid.jpg','pbg.jpg','gedungmu.jpg','sukatani1.png','stasiun.jpg','soedirman1.jpg'] as $galeri)
-      <div class="relative group rounded-xl overflow-hidden shadow-lg">
-        <div class="aspect-[4/3] w-full">
-          <img src="/images/{{ $galeri }}"
-               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-               alt="Galeri">
-        </div>
-        {{-- Overlay --}}
-        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
-      </div>
-    @endforeach
+    <div class="swiper-pagination mt-6"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 </section>
+
 
 
   <!-- Testimoni -->
