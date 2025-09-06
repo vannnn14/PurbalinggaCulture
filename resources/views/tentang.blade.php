@@ -147,29 +147,29 @@
 
         <!-- Member 2 -->
         <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="150">
+             data-aos="fade-up">
           <div class="relative">
-            <img src="/images/member2.jpg" alt="Intan"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/intan.png" alt="Intan"
+                 class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Intan</h3>
-            <p class="text-amber-600 text-sm mb-3">UI/UX Designer</p>
-            <p class="text-gray-600 text-sm">Merancang tampilan modern dan ramah pengguna.</p>
+            <p class="text-amber-600 text-sm mb-3">UI/UX</p>
+            <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
           </div>
         </div>
 
         <!-- Member 3 -->
         <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="300">
+             data-aos="fade-up">
           <div class="relative">
-            <img src="/images/sony1.png" alt="Sony"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/sony4.png" alt="Sony"
+                 class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Sony</h3>
-            <p class="text-amber-600 text-sm mb-3">Content Writer</p>
-            <p class="text-gray-600 text-sm">Mengelola artikel, narasi, dan dokumentasi budaya.</p>
+            <p class="text-amber-600 text-sm mb-3">Developer</p>
+            <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
           </div>
         </div>
 
