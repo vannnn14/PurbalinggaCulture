@@ -88,8 +88,8 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       @foreach ([
         ['title'=>'Seni & Tradisi','img'=>'kentongan.png','link'=>'/senitradisi'],
-        ['title'=>'Tokoh Purbalingga','img'=>'tokoh1.png','link'=>'/tokoh'],
-        ['title'=>'Wisata','img'=>'owabong1.png','link'=>'/wisata'],
+        ['title'=>'Sejarah Purbalingga','img'=>'tokoh1.png','link'=>'/sejarah'],
+        ['title'=>'Batik Daerah','img'=>'batik.jpg','link'=>'/batik'],
         ['title'=>'Kuliner','img'=>'mendoan1.jpg','link'=>'/kuliner']
       ] as $menu)
       <a href="{{ $menu['link'] }}"
@@ -107,7 +107,7 @@
   </section>
 
   <!-- Translate Section -->
-  <section class="bg-gray-100 py-20" data-aos="fade-up">
+  <section class="bg-amber-50 py-16" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center space-y-6">
       <h2 class="text-2xl md:text-3xl font-semibold">
         Jelajahi kekayaan bahasa daerah lewat
