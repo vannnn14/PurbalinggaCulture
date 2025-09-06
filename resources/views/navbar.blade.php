@@ -41,7 +41,7 @@
             bg-cover bg-center border-b text-white shadow-lg">
 
       <!-- Overlay warna + batik -->
-      <div class="absolute inset-0 bg-[#532700] opacity-95"></div>
+      <div class="absolute inset-0 bg-[#5C2E00] opacity-95"></div>
       <div class="absolute inset-0 batik-pattern"></div>
 
       <!-- Konten navbar -->
@@ -52,7 +52,7 @@
             <!-- Brand -->
             <a href="/home" class="flex-1 text-left sm:text-center">
               <h1 class="text-lg sm:text-2xl font-extrabold tracking-wider text-amber-300 drop-shadow-md">
-                Purbalingga Culture
+                PurbaCulture
               </h1>
             </a>
 

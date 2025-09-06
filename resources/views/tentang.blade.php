@@ -64,7 +64,7 @@
       <p class="text-gray-600 mt-4">Arah dan tujuan kami dalam menjaga warisan budaya</p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-2 gap-5">
 
       <!-- Visi -->
       <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
@@ -88,42 +88,6 @@
     </div>
   </section>
 
-  <!-- Nilai Kami -->
-  <section class="py-20 px-6 md:px-20 bg-white">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-amber-800 mb-12">Nilai Kami</h2>
-
-      <div class="grid md:grid-cols-4 gap-8">
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in">
-          <div class="text-4xl text-amber-700 mb-3">🎯</div>
-          <h3 class="font-semibold text-lg mb-2">Fokus</h3>
-          <p class="text-sm text-gray-600">Konsistensi dan kualitas dalam setiap langkah.</p>
-        </div>
-
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
-          data-aos-delay="100">
-          <div class="text-4xl text-amber-700 mb-3">🔥</div>
-          <h3 class="font-semibold text-lg mb-2">Passion</h3>
-          <p class="text-sm text-gray-600">Semangat kami adalah energi yang terus hidup.</p>
-        </div>
-
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
-          data-aos-delay="200">
-          <div class="text-4xl text-amber-700 mb-3">🤝</div>
-          <h3 class="font-semibold text-lg mb-2">Kolaborasi</h3>
-          <p class="text-sm text-gray-600">Bersama masyarakat melestarikan budaya.</p>
-        </div>
-
-        <div class="p-6 bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition" data-aos="zoom-in"
-          data-aos-delay="300">
-          <div class="text-4xl text-amber-700 mb-3">🌍</div>
-          <h3 class="font-semibold text-lg mb-2">Inovasi</h3>
-          <p class="text-sm text-gray-600">Menghadirkan solusi kreatif dalam pelestarian budaya.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Tim Kami -->
   <section class="py-20 px-6 md:px-20 bg-amber-50">
     <div class="max-w-6xl mx-auto text-center">
@@ -140,34 +104,32 @@
           <div class="p-6">
             <h3 class="font-semibold text-lg">Irvan</h3>
             <p class="text-amber-600 text-sm mb-3">Developer</p>
-            <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
+            <p class="text-gray-600 text-sm">lagi ora duwe kata kata.</p>
           </div>
         </div>
 
         <!-- Member 2 -->
-        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="150">
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
           <div class="relative">
-            <img src="/images/member2.jpg" alt="Intan"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/intan.png" alt="Irvan"
+              class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Intan</h3>
-            <p class="text-amber-600 text-sm mb-3">UI/UX</p>
-            <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
+            <p class="text-amber-600 text-sm mb-3">Developer</p>
+            <p class="text-gray-600 text-sm">hidup cuma sekali, kalo mau dua beli imortal</p>
           </div>
         </div>
 
         <!-- Member 3 -->
-        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="300">
+        <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
           <div class="relative">
-            <img src="/images/sony1.png" alt="Sony"
-                 class="w-full h-60 object-cover group-hover:scale-105 transition">
+            <img src="/images/sony4.png" alt="Irvan"
+              class="w-full h-80 object-cover group-hover:scale-105 transition">
           </div>
           <div class="p-6">
             <h3 class="font-semibold text-lg">Sony</h3>
-            <p class="text-amber-600 text-sm mb-3">Developer</p>
+            <p class="text-amber-600 text-sm mb-3">Copy Writer</p>
             <p class="text-gray-600 text-sm">Mengembangkan sistem dan database PurbaCulture.</p>
           </div>
         </div>
@@ -177,7 +139,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="relative py-20 bg-amber-700 text-white text-center">
+  <!-- <section class="relative py-20 bg-red-500 text-white text-center">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
         Mari Bersama Melestarikan Budaya Purbalingga
@@ -186,13 +148,8 @@
         Dengan teknologi, kolaborasi, dan semangat bersama, kita bisa menjaga
         warisan budaya agar tetap hidup di hati generasi mendatang.
       </p>
-      <a href="/kontak"
-        class="px-8 py-3 bg-white text-amber-700 rounded-full font-semibold shadow hover:bg-gray-100 transition"
-        data-aos="zoom-in" data-aos-delay="200">
-        Hubungi Kami
-      </a>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- AOS Script -->
