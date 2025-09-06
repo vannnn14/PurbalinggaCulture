@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TranslateController;
+use App\Http\Controllers\KulinerController;
+use App\Http\Controllers\beritaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,4 +48,6 @@ Route::get('/tokoh', function () {
 Route::get('/berita', function () {
     return view('beritatokoh');
 });
-Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'index'])->name('berita');
+Route::get('/berita', [beritaController::class, 'index'])->name('berita');
+
+Route::get('/kuliner/{slug}', [KulinerController::class, 'show'])->name('kuliner.show');

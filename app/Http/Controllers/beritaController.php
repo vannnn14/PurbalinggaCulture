@@ -86,44 +86,42 @@ class BeritaController extends Controller
                     ]
                 ]
             ],
-            'sukatani' => [
-                'nama' => 'Sukatani',
-                'gelar' => 'Panglima TNI dan Pahlawan Nasional',
-                'kategori' => 'Pahlawan Nasional',
-                'gambar' => '/images/sukatani1.png',
-                'lahir' => '1920, Purbalingga',
-                'wafat' => '1949, Jawa Tengah',
-                'dikenal' => 'Panglima TNI, Pahlawan Nasional',
-                'penghargaan' => 'Pahlawan Nasional',
-                'biografi_terstruktur' => [
-                    [
-                        'judul' => 'Biografi',
-                        'tipe' => 'paragraf',
-                        'konten' => 'Sukatani adalah salah satu pahlawan nasional Indonesia yang berasal dari Purbalingga. Ia dikenal karena perannya yang heroik dalam perjuangan kemerdekaan Indonesia melawan penjajah.'
-                    ],
-                    [
-                        'judul' => 'Masa Muda dan Semangat Nasionalisme',
-                        'tipe' => 'subjudul',
-                        'konten' => 'Sejak muda, Sukatani telah menunjukkan semangat nasionalisme yang tinggi. Ia aktif dalam berbagai organisasi pergerakan pemuda yang memperjuangkan kemerdekaan Indonesia dari penjajahan.'
-                    ],
-                    [
-                        'judul' => 'Peran dalam Revolusi Fisik',
-                        'tipe' => 'subjudul',
-                        'konten' => 'Pada masa revolusi fisik, Sukatani bergabung dengan tentara republic dan terlibat dalam berbagai pertempuran melawan tentara Belanda. Keberanian dan kepemimpinannya di medan perang membuatnya dihormati oleh kawan dan ditakuti oleh lawan.'
-                    ],
-                    [
-                        'judul' => 'Pengorbanan',
-                        'tipe' => 'subjudul',
-                        'konten' => 'Sukatani gugur dalam salah satu pertempuran melawan Belanda pada tahun 1949. Pengorbanannya untuk negara menjadi inspirasi bagi generasi berikutnya dalam membela tanah air.'
-                    ],
-                    [
-                        'judul' => 'Warisan dan Penghormatan',
-                        'tipe' => 'subjudul',
-                        'konten' => 'Atas jasa dan pengorbanannya, pemerintah Indonesia menganugerahi Sukatani gelar Pahlawan Nasional. Namanya diabadikan sebagai nama jalan di beberapa kota di Indonesia sebagai bentuk penghormatan atas jasanya.'
-                    ]
+           'sukatani' => [
+            'nama' =>        'Sukatani',
+            'gelar' =>       'Duo post-punk dari Purbalingga',
+            'kategori' =>    'Musisi / Band Indie',
+            'gambar' =>      '/images/sukatani1.png',
+            'lahir' =>       'Purbalingga, Jawa Tengah',
+            'dikenal' =>     'Musik post-punk, kritik sosial & agraria',
+            'biografi_terstruktur' => [
+                [
+                    'judul' => 'Biografi',
+                    'tipe'  => 'paragraf',
+                    'konten'=> 'Sukatani adalah duo post-punk dari Purbalingga yang dibentuk Oktober 2022. Beranggotakan Alectroguy (gitar/produksi) dan Twister Angel (vokal), mereka dikenal lewat lirik satir yang menyoroti agraria, konsumerisme, dan ketimpangan sosial.'
+                ],
+                [
+                    'judul' => 'Gaya & Identitas',
+                    'tipe'  => 'subjudul',
+                    'konten'=> 'Mereka tampil dengan balaclava dan kerap membagikan sayuran saat perform sebagai simbol solidaritas petani. Musiknya memadukan post-punk, new wave, hingga synth-pop.'
+                ],
+                [
+                    'judul' => 'Kontroversi Lagu',
+                    'tipe'  => 'subjudul',
+                    'konten'=> 'Single "Bayar Bayar Bayar" sempat menuai kontroversi karena lirik satir terhadap pungutan. Lagu itu ditarik dari platform, tapi justru makin memperkuat dukungan publik terhadap pesan sosial mereka.'
+                ],
+                [
+                    'judul' => 'Diskografi',
+                    'tipe'  => 'subjudul',
+                    'konten'=> 'Album perdana "Gelap Gempita" (2023) berisi lagu-lagu seperti "Sukatani", "Alas Wirasaba", dan "Realitas Konsumerisme".'
+                ],
+                [
+                    'judul' => 'Warisan & Pengaruh',
+                    'tipe'  => 'subjudul',
+                    'konten'=> 'Sukatani memberi warna baru bagi musik independen Jawa Tengah. Mereka membawa isu agraria dan perlawanan rakyat kecil ke ruang festival nasional.'
                 ]
-            ],
-            'indro' => [
+            ]
+        ],
+         'indro' => [
                 'nama' => 'Indrodjojo Kusumonegoro',
                 'gelar' => 'Artis dan Komedian Legendaris',
                 'kategori' => 'Artis & Budayawan',

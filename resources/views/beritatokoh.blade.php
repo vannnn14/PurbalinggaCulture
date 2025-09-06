@@ -57,10 +57,7 @@
                   <span class="font-medium w-32">Dikenal</span>
                   <span class="text-gray-700">{{ $dikenal }}</span>
                 </li>
-                <li class="flex">
-                  <span class="font-medium w-32">Penghargaan</span>
-                  <span class="text-gray-700">{{ $penghargaan }}</span>
-                </li>
+           
               </ul>
             </div>
           </div>
