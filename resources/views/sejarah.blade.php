@@ -37,7 +37,7 @@
         imagesizes="(min-width: 1024px) 640px, 100vw">
 </head>
 
-<body class="antialiased text-gray-800">
+<body class="antialiased bg-[#FFECD1] text-gray-800">
   {{-- Skip link untuk aksesibilitas --}}
   <a href="#content"
      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded-lg">
