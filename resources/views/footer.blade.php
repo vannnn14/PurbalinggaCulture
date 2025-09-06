@@ -25,13 +25,13 @@
     <li>
       <button 
         onclick="document.getElementById('submenu-jelajah').classList.toggle('hidden')" 
-        class="hover:text-amber-400 transition font-semibold"
+        class="hover:text-amber-400 transition font-semibold cursor-pointer"
       >
         &rsaquo; Jelajah Budaya
       </button>
 
       <ul id="submenu-jelajah" class="hidden ml-4 mt-2 space-y-1 text-sm text-gray-300">
-        <li><a href="sejarah" class="hover:text-amber-400 transition">› Sejarah Purbalingga</a></li>
+        <li><a href="/sejarah" class="hover:text-amber-400 transition">› Sejarah Purbalingga</a></li>
         <li><a href="/senitradisi" class="hover:text-amber-400 transition">› Seni & Tradisi</a></li>
         <li><a href="/batik" class="hover:text-amber-400 transition">› Batik Daerah</a></li>
       </ul>
