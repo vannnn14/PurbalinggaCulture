@@ -51,7 +51,7 @@
 
       {{-- Teks --}}
       <div class="order-2 lg:order-1 relative">
-        <span class="text-[11px] sm:text-xs uppercase tracking-wide text-[#8B5E3C]">Kuliner Purbalingga</span>
+        <span class="text-[11px] sm:text-xs uppercase tracking-wide text-[#FAF4E1]">Kuliner Purbalingga</span>
         <h1 class="mt-2 sm:mt-3 text-2xl sm:text-3xl lg:text-5xl font-semibold leading-tight text-[#5C3A21]">
           Cita Rasa Autentik,
           <span class="block">Warisan Kuliner Purbalingga</span>
@@ -84,7 +84,7 @@
       {{-- Kartu besar (span 2 kolom di desktop) --}}
       <article class="lg:col-span-2 group">
         <a href="{{ route('kuliner.show', 'tempe-mendoan-gurih-tipis-hangat') }}"
-           class="block rounded-xl overflow-hidden border border-[#8B5E3C]/60 sm:border-[#8B5E3C] shadow hover:shadow-md transition">
+           class="block rounded-xl overflow-hidden border bg-white border-[#8B5E3C]/60 sm:border-[#8B5E3C] shadow hover:shadow-md transition">
           <div class="aspect-[16/9]">
             <img src="{{ asset('images/mendoan2.jpg') }}" alt="Tempe Mendoan"
                  class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300">
@@ -135,7 +135,7 @@
         @foreach ($items as $it)
           <article class="group">
             <a href="{{ route('kuliner.show', $it['slug']) }}"
-               class="block rounded-xl overflow-hidden border border-[#8B5E3C]/50 hover:border-[#8B5E3C] transition">
+               class="block rounded-xl overflow-hidden border bg-white border-[#8B5E3C]/50 hover:border-[#8B5E3C] transition">
               <div class="aspect-[4/3]">
                 <img src="{{ asset($it['img']) }}" alt="{{ $it['title'] }}"
                      class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300" loading="lazy" decoding="async">

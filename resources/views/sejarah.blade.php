@@ -37,7 +37,7 @@
         imagesizes="(min-width: 1024px) 640px, 100vw">
 </head>
 
-<body class="antialiased bg-[#FFECD1] text-gray-800">
+<body class="antialiased bg-[#FAF4E1] text-gray-800">
   {{-- Skip link untuk aksesibilitas --}}
   <a href="#content"
      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded-lg">
@@ -49,7 +49,7 @@
 
   <main id="content" class="scroll-smooth" tabindex="-1">
     {{-- HERO (teks + gambar) --}}
-    <section class="bg-[#FFECD1]/50" role="region" aria-labelledby="judul-sejarah">
+    <section class="bg-[#FAF4E1]/50" role="region" aria-labelledby="judul-sejarah">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <article class="space-y-6">
           <header class="space-y-2">
@@ -183,7 +183,7 @@
     <hr class="border-0 h-px bg-gray-300">
 
     {{-- TOKOH PURBALINGGA (header + 4 highlight) --}}
-    <section id="tokoh" class="py-12 bg-[#FFECD1]/50 mb-5" role="region" aria-labelledby="judul-tokoh">
+    <section id="tokoh" class="py-12 bg-[#FAF4E1]/50 mb-5" role="region" aria-labelledby="judul-tokoh">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between">
           <h2 id="judul-tokoh" class="text-2xl md:text-[34px] leading-none font-semibold text-[#5a371c]">
@@ -206,7 +206,7 @@
           
           {{-- Jendral Soedirman --}}
           <li>
-            <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <article class="relative rounded-xl overflow-hidden shadow-lg group bg-white ">
                  <a href="{{ route('berita', ['tokoh' => 'soedirman']) }}">
                 <img src="/images/soedirman.jpeg" alt="Jendral Soedirman"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
@@ -220,7 +220,7 @@
           </li>
           {{-- Mayjen Soengkono --}}
           <li>
-            <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <article class="relative rounded-xl overflow-hidden shadow-lg group bg-white">
               <a href="{{ route('berita', ['tokoh' => 'soengkono']) }}" class="block">
                 <img src="/images/soengkono1.jpg" alt="Mayjen Soengkono"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
@@ -235,7 +235,7 @@
 
           {{-- Sukatani --}}
           <li>
-            <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <article class="relative rounded-xl overflow-hidden shadow-lg group bg-white">
               <a href="{{ route('berita', ['tokoh' => 'sukatani']) }}" class="block">
                 <img src="/images/sukatani1.png" alt="Sukatani"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
@@ -250,7 +250,7 @@
 
           {{-- Indrodjojo Kusumonegoro (Indro Warkop) --}}
           <li>
-            <article class="relative rounded-xl overflow-hidden shadow-lg group">
+            <article class="relative rounded-xl overflow-hidden shadow-lg group bg-white">
               <a href="{{ route('berita', ['tokoh' => 'indro']) }}" class="block">
                 <img src="/images/indro.jpeg" alt="Indrodjojo Kusumonegoro (Indro Warkop)"
                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
